@@ -23,6 +23,10 @@ namespace UIS.Controllers
             return View();
         }
 
+        public IActionResult UIS()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
