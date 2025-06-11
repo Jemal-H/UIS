@@ -13,9 +13,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
+       <header style="background-color: lightgray; width: 100%;">
+  
+        <div class="container text-center">
+            <h1 style="margin-bottom:0">UIS Help</h1>
+            <p>Help with UIS, Timeclock and TSR</p>
+        </div>
+
+    </header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="photos/waffle-house-logo.svg" alt="Waffle House Logo">
+                    <style>
+                        .navbar {
+                            background-color: #333;
+                            position: static;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            padding: 2px 2px;
+                        }
+
+                        .navbar-brand img {
+                            width: 75px; /* Adjust as needed */
+                            height: auto;
+                        }
+                    </style>
+                </a>
+             </div>
+             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">UIS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +69,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">MICROS/Oracle Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Associate Info</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AssociateInfo">Associate Info</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Management Info</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ManagementInfo">Management Info</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -59,8 +93,10 @@
             <div class="col-auto">
                 <h6>
                     <b>
-                        If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue.
-                        If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
+                        <center>
+                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue.
+                            If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
+                        </center>
                     </b>
                 </h6>
             </div>
@@ -72,12 +108,12 @@
         &copy; 2025 - Waffle House <a asp-area="" asp-controller="Home"></a>
     </div>
 
-        
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 
-   
+
 </body>
 </html>
