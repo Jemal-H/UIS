@@ -27,6 +27,16 @@ namespace UIS.Controllers
         {
             return View();
         }
+
+        public IActionResult AssociateInfo()
+        {
+            return View();
+        }
+
+        public IActionResult ManagementInfo()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
