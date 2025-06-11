@@ -23,8 +23,21 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Time Clock</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">UIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">MICROS/Oracle Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Associate Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Management Info</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -36,14 +49,31 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - UIS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <hr>
+    <div class="text-center">
+        <div class="row  justify-content-center">
+            <div class="col-auto">
+                <h6>
+                    <b>
+                        <small>If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue.
+                        If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.</small>
+                    </b>
+                </h6>
+            </div>
         </div>
-    </footer>
+    </div>
+    </hr>
+
+    <div class="container">
+        &copy; 2025 - Waffle House <a asp-area="" asp-controller="Home"></a>
+    </div>
+
+        
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+   
 </body>
 </html>
