@@ -338,14 +338,17 @@
         <h4>Monitor screen rotation is incorrect</h4>
         <ol>
             <li>1. Use your computer mouse to click on the office monitor's blue background.</li>
-            <li>On the keyboard in the office, press and hold the following keyboard keys for 10 seconds:</li>
-            CTRL key, ALT key, and the Up arrow key (&#8679)
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#image1">Show Images</button>
-            <div id="image1" class="collapse">
+            <li>On the keyboard in the office, press and hold the following keyboard keys for 10 seconds: CTRL key, ALT key, and the Up arrow key (&#8679) </li>
+            
                 <div class="row">
-                    <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")" width="585" height="195" class="center">
+                    <button class="btn btn-sm btn-primary " data-toggle="collapse" data-target="#image1">Show Image 1</button>
+                    <div id="image1" class="collapse mt-2">
+                        <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")" class="img-responsive center-block" style="max-width: 500px; height: auto;" alt="Printer Back">
+
+                    </div>
                 </div>
-            </div>
+            
+
             <li>All three of the keys need to be held down at the same time.</li>
             <li>After 10 seconds, the monitor screen should rotate correctly.</li>
             <li>Follow steps 1-3 if the time clock doesn't change rotations after the first try. </li>
@@ -378,7 +381,7 @@
     <div class="col-sm-4">
         <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#id2">Show Image 2</button>
         <div id="id2" class="collapse mt-2">
-            <img src="@Url.Content("~/photos/thumbnail/printerCable.png")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="Printer Cable">
+            <img src="@Url.Content("~/Images/printerCable.png")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="Printer Cable">
             <p class="mt-2">Note: It does not matter which USB port the printer is plugged into in the back of the computer.</p>
         </div>
     </div>
@@ -430,11 +433,11 @@
                 Example:
             </ul>
 
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#com">Show Images</button>
+            <button data-toggle="collapse" class="btn btn-sm btn-primary " data-target="#com">Show Images</button>
             <div id="com" class="collapse">
                 <div class="row">
-                    <img src="@Url.Content("~/Images/FloorCount1.PNG")" class="full">
-                    <img src="@Url.Content("~/Images/FloorCount2.PNG")" class="full">
+                    <img src="@Url.Content("~/Images/FloorCount1.PNG")" class="img-responsive center-block" style="max-width: 800px; height: auto;" alt="FloorCount1 image">
+                    <img src="@Url.Content("~/Images/FloorCount2.PNG")" class="img-responsive center-block" style="max-width: 800px; height: auto;" alt="Floorcount2 image">
 
                 </div>
             </div>
