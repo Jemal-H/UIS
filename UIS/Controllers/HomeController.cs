@@ -37,6 +37,21 @@ namespace UIS.Controllers
         {
             return View();
         }
+
+        public IActionResult NewUnitOpenings()
+        {
+            return View();
+        }
+
+        public IActionResult UnitShutDown()
+        {
+            return View();
+        }
+
+        public IActionResult DevicesandPorts()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
