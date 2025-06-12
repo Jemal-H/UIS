@@ -263,71 +263,7 @@
         @Html.Partial("_PowerVar")
 
             </ol>
-            <p>Note: if you plan to ship the powervar to another location, weather that be another unit or to return it to UIS, please follow the packing instructions below to ensure that the shipment can be made safely.</p>
-            <hr />
-            <h4>Shipping your powervar</h4>
-            <p>To ensure the safe shipment of the unit and its battery, please follow the following instructions.  This applies in <b>all circumstances</b>, even if the unit is broken or the battery is dead.</p>
-            <ol>
-                <div class="row">
-                    <div class="row">
-                <li>
-                    <p>
-                        Before unplugging the unit, make sure the unit is turned off.  While it is still plugged in, press and hold the power button for 3 seconds: until the lights and any sound the unit may be making are off.
-                        If the unit is faulty, you should skip this step.  If you do not know weather or not the unit is faulty, it is better to skip this step.
-                    </p>
-                </li>
-                <button data-toggle="collapse" class="btn btn-primary" data-target="#ship1">Show Images</button>
-                <div id="ship1" class="collapse">
-                    <div class="row">
-                        <img src="photos/thumbnail/UPSag.jpg" width="300" height="300" class="full">
-                    </div>
-                </div>
-        </div>
-        <div class="row">
-            <li>Remove the front panel using the finger grips on the side of the panel and pivot from the bottom. </li>
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#ship2">Show Images</button>
-            <div id="ship2" class="collapse">
-                <div class="row">
-                    <img src="photos/thumbnail/UPSShipB.jpg" width="300" height="300" class="full">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <li>Unplug the battery jumpers</li>
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#ship3">Show Images</button>
-            <div id="ship3" class="collapse">
-                <div class="row">
-                    <img src="photos/thumbnail/UPSShipC.jpg" width="300" height="300" class="full">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <li>Stow the battery jumpers so they do not obstruct the face plate.  If the unit has posts the jumpers were held on, the left jumper should go on the bottom left post, the right jumper should go on the top post. </li>
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#ship4">Show Images</button>
-            <div id="ship4" class="collapse">
-                <div class="row">
-                    <img src="photos/thumbnail/UPSShipD.jpg" width="300" height="300" class="full">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <li>Replace the front cover panel, pivoting it back on in the same way as it was removed.</li>
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#ship5">Show Images</button>
-            <div id="ship5" class="collapse">
-                <div class="row">
-                    <img src="photos/thumbnail/UPSShipE.jpg" width="300" height="300" class="full">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <li>Make sure the unit is well padded.  If you just received a unit from UPS, we recommend reusing this box and padding.  Otherwise, rap the unit in large bubblewrap or paper void filler: the unit should be padded on every corner.</li>
-        </div>
-    </div>
-
-    </ol>
-</div>
-</div>
+            
 <div class="panel-heading">
     <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse8">Office Monitor Rotated Screen (Windows 10)</a>
@@ -338,14 +274,17 @@
         <h4>Monitor screen rotation is incorrect</h4>
         <ol>
             <li>1. Use your computer mouse to click on the office monitor's blue background.</li>
-            <li>On the keyboard in the office, press and hold the following keyboard keys for 10 seconds:</li>
-            CTRL key, ALT key, and the Up arrow key (&#8679)
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#image1">Show Images</button>
-            <div id="image1" class="collapse">
+            <li>On the keyboard in the office, press and hold the following keyboard keys for 10 seconds: CTRL key, ALT key, and the Up arrow key (&#8679) </li>
+            
                 <div class="row">
-                    <img src="photos/keyboard/uis_keyboard_ctrlAltUp.png" width="585" height="195" class="center">
+                    <button class="btn btn-sm btn-primary " data-toggle="collapse" data-target="#image1">Show Image 1</button>
+                    <div id="image1" class="collapse mt-2">
+                        <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")" class="img-responsive center-block" style="max-width: 500px; height: auto;" alt="Printer Back">
+
+                    </div>
                 </div>
-            </div>
+            
+
             <li>All three of the keys need to be held down at the same time.</li>
             <li>After 10 seconds, the monitor screen should rotate correctly.</li>
             <li>Follow steps 1-3 if the time clock doesn't change rotations after the first try. </li>
@@ -368,39 +307,29 @@
         <ul>
             <li>Make sure the printer is connected to the computer, the printer has the USB cable plugged into the back of the printer, and the other end of the USB cable is plugged into a USB port on the back of the computer.  </li>
             <br />
-            <div class="btn-group">
+           <div class="row text-center mb-3">
+    <div class="col-sm-4">
+        <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#id1">Show Image 1</button>
+        <div id="id1" class="collapse mt-2">
+            <img src="@Url.Content("~/Images/printerBack.jpg")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="Printer Back">
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#id2">Show Image 2</button>
+        <div id="id2" class="collapse mt-2">
+            <img src="@Url.Content("~/Images/printerCable.png")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="Printer Cable">
+            <p class="mt-2">Note: It does not matter which USB port the printer is plugged into in the back of the computer.</p>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#id3">Show Image 3</button>
+        <div id="id3" class="collapse mt-2">
+            <img src="@Url.Content("~/Images/USBAtoB.png")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="USB A to B Cable">
+            <p class="mt-2">This is what the cable should look like.</p>
+        </div>
+    </div>
+</div>
 
-                <div class="row">
-                    <button data-toggle="collapse" class="btn btn-primary" data-target="#id1">Show Image</button>
-                    <div id="id1" class="collapse">
-                        <div class="row">
-                            <img src="photos/thumbnail/printerBack.jpg" width="300" height="300" class="center">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button data-toggle="collapse" class="btn btn-primary" data-target="#id2">Show Image</button>
-                        <div id="id2" class="collapse">
-                            <div class="row">
-                                <img src="photos/thumbnail/printerCable.png" width="400" height="400" class="center">
-                            </div>
-                        </div>
-
-
-                        <p>Note: It does not matter which USB port the printer is plugged into in the back of the computer.  It will look something like this.</p>
-                    </div>
-                    <div class="row">
-                        <button data-toggle="collapse" class="btn btn-primary" data-target="#id3">Show Image</button>
-                        <div id="id3" class="collapse">
-                            <div class="row">
-                                <img src="photos/thumbnail/USBAtoB.png" width="500" height="500" class="center">
-                            </div>
-                        </div>
-
-
-                        <p>This is what the cable should look like. </p>
-                    </div>
-                </div>
-            </div>
             <br />
             <li>Make sure there is toner in the printer and paper in the paper tray. </li>
             <li>Once the office printer is connected to the computer, call <u><b>770-729-5933</b></u> and select <b>option 3</b>.</li>
@@ -440,11 +369,11 @@
                 Example:
             </ul>
 
-            <button data-toggle="collapse" class="btn btn-primary" data-target="#com">Show Images</button>
+            <button data-toggle="collapse" class="btn btn-sm btn-primary " data-target="#com">Show Images</button>
             <div id="com" class="collapse">
                 <div class="row">
-                    <img src="photos/thumbnail/FloorCount1.PNG" class="full">
-                    <img src="photos/thumbnail/FloorCount2.PNG" class="full">
+                    <img src="@Url.Content("~/Images/FloorCount1.PNG")" class="img-responsive center-block" style="max-width: 800px; height: auto;" alt="FloorCount1 image">
+                    <img src="@Url.Content("~/Images/FloorCount2.PNG")" class="img-responsive center-block" style="max-width: 800px; height: auto;" alt="Floorcount2 image">
 
                 </div>
             </div>
@@ -545,11 +474,11 @@
         <p>How to update the phone recording:</p>
         <ol>
             <li>Go to Ops Express and select Unit Operations/Online Scheduling:</li>
-            <a><img src="photos/PhoneMessUp1.png" data-toggle="modal" data-target="#RegRouterTh" class=""></a>
+            <a><img src="@Url.Content("~/Images/PhoneMessUp1.png")" data-toggle="modal" data-target="#RegRouterTh" class=""></a>
             <li>Select the unit you’ll need to change the phone recording for</li>
-            <img src="photos/PhoneMessUp2.png" data-toggle="modal" data-target="#RegRouterTh" class="">
+            <img src="@Url.Content("~/Images/PhoneMessUp2.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
             <li>Select Unit Phone Recording:</li>
-            <img src="photos/PhoneMessUp3.png" data-toggle="modal" data-target="#RegRouterTh" class="">
+            <img src="@Url.Content("photos/PhoneMessUp3.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
             <li>
                 Select the recording you would like.<br />
                 Once you have selected the recording you like select “Update Recording,” and it will automatically update the recording for the phone system.
@@ -573,7 +502,7 @@
             <button data-toggle="collapse" class="btn btn-primary" data-target="#report1">Show Images</button>
             <div id="report1" class="collapse">
                 <div class="row">
-                    <img src="photos/securityreport1.png" width="585" height="195" class="center">
+                    <img src="@Url.Content("~/Images/securityreport1.png")" width="585" height="195" class="center">
                 </div>
             </div>
             <li>Select a Form 4 date</li>
@@ -581,27 +510,27 @@
             <button data-toggle="collapse" class="btn btn-primary" data-target="#report2">Show Images</button>
             <div id="report2" class="collapse">
                 <div class="row">
-                    <img src="photos/securityreport2.png" width="585" height="195" class="center">
+                    <img src="@Url.Content("~/Images/securityreport2.png")" width="585" height="195" class="center">
                 </div>
             </div>
             <button data-toggle="collapse" class="btn btn-primary" data-target="#report3">Show Images</button>
             <div id="report3" class="collapse">
                 <div class="row">
-                    <img src="photos/securityreport3.png" width="585" height="195" class="center">
+                    <img src="@Url.Content("~/Images/securityreport3.png")" width="585" height="195" class="center">
                 </div>
             </div>
             <li>To create a security incident, select “Add New Security Event.” (You can also view past reported security incidents in this menu.)</li>
             <button data-toggle="collapse" class="btn btn-primary" data-target="#report4">Show Images</button>
             <div id="report4" class="collapse">
                 <div class="row">
-                    <img src="photos/securityreport4.png" width="585" height="195" class="center">
+                    <img src="@Url.Content("~/Images/securityreport4.png")" width="585" height="195" class="center">
                 </div>
             </div>
             <li>Once you select “Add New Security Event” a page will open for you to input information about the security incident that had occurred on that Form 4 day.</li>
             <button data-toggle="collapse" class="btn btn-primary" data-target="#report5">Show Images</button>
             <div id="report5" class="collapse">
                 <div class="row">
-                    <img src="photos/securityreport5.png" width="585" height="195" class="center">
+                    <img src="@Url.Content("~/Images/securityreport5.png")" width="585" height="195" class="center">
                 </div>
             </div>
 
