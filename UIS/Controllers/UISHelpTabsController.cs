@@ -4,13 +4,33 @@ using UIS.Models;
 
 namespace UIS.Controllers
 {
-    public class Othercontroller : Controller
+    public class UISHelpTabsController : Controller
     {
-        private readonly ILogger<Othercontroller> _logger;
+        private readonly ILogger<UISHelpTabsController> _logger;
 
-        public Othercontroller(ILogger<Othercontroller> logger)
+        public UISHelpTabsController(ILogger<UISHelpTabsController> logger)
         {
             _logger = logger;
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult UIS()
+        {
+            return View();
+        }
+
+        public IActionResult MICROS()
+        {
+            return View();
+        }
+
+        public IActionResult AssociateInfo()
+        {
+            return View();
         }
 
         public IActionResult DevicesandPorts()
@@ -25,6 +45,15 @@ namespace UIS.Controllers
         {
             return View();
         }
+
+        public IActionResult ManagementInfo()
+        {
+            return View();
+        }
+
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
