@@ -1,19 +1,19 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using UIS.Models;
 
 namespace UIS.Controllers
 {
-    public class HomeController : Controller
+    public class ManagementInfoController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ManagementInfoController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ManagementInfoController(ILogger<ManagementInfoController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult ManagementInfo()
         {
             return View();
         }

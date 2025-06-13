@@ -28,6 +28,9 @@
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+        }
+
+        .nav > li {
             margin-right: 20px;
         }
 
@@ -42,11 +45,6 @@
             color: black !important;
         }
 
-        .active-tab {
-            background-color: white !important;
-            color: black !important;
-            font-weight: bold;
-        }
 
 
     </style>
@@ -60,37 +58,20 @@
     </header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <a class="navbar-brand" href="#"><img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo"></a>
-        <button class="navbar-toggle"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="ncollapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav">
-                <li class="active "><a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li class><a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="Privacy">Time Clock</a></li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="UIS">UIS</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="MICROS">MICROS/Oracle Register</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="AssociateInfo">Associate Info</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="ManagementInfo">Management Info</a>
-                </li>
-                <li class="dropdown">
+            <ul class="navbar-nav nav-tabs flex-grow-1">
+                <li class="nav"><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")" asp-area="#" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "TimeClock" ? "active text-black" : "text-white")" asp-area="#" asp-controller="TimeClock" asp-action="Privacy">Time Clock</a></li>
+                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "UIS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UIS" asp-action="UIS">UIS</a></li>
+                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "MICROS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="MICROS" asp-action="MICROS">MICROS/Oracle Register</a></li>
+                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "AssociateInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="AssociateInfo" asp-action="AssociateInfo">Associate Info</a></li>
+                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "ManagementInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="ManagementInfo" asp-action="ManagementInfo">Management Info</a></li>
+                <li class="dropdown @(ViewContext.RouteData.Values["controller"].ToString() == "Other" ? "active-tab" : "")">
                     <a class="nav-link text-light" asp-area="" data-toggle="dropdown">Other<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="NewUnitOpenings">New Unit Openings</a></li>
-                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="UnitShutDown">Unit Shut Down</a></li>
-                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="DevicesandPorts">Device Layout and Ports</a></li>
+                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["action"].ToString() == "Other" ? "active text-black" : "text-black")" asp-area="#" asp-controller="Other" asp-action="NewUnitOpenings">New Unit Openings</a></li>
+                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["action"].ToString() == "Other" ? "active text-black" : "text-black")" asp-area="#" asp-controller="Other" asp-action="UnitShutDown">Unit Shut Down</a></li>
+                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["action"].ToString() == "Other" ? "active text-black" : "text-black")" asp-area="#" asp-controller="Other" asp-action="DevicesandPorts">Device Layout and Ports</a></li>
                     </ul>
                 </li>
             </ul>
@@ -259,7 +240,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <div class="modal fade" id="UPSShipC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">

@@ -1,22 +1,31 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using UIS.Models;
 
 namespace UIS.Controllers
 {
-    public class HomeController : Controller
+    public class Othercontroller : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<Othercontroller> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public Othercontroller(ILogger<Othercontroller> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult DevicesandPorts()
         {
             return View();
         }
+        public IActionResult UnitShutDown()
+        {
+            return View();
+        }
+        public IActionResult NewUnitOpenings()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
