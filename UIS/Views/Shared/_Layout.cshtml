@@ -1,9 +1,8 @@
-﻿﻿
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewData["Title"] - UIS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -12,87 +11,91 @@
     <link rel="stylesheet" href="~/UIS.styles.css" asp-append-version="true" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            background-color: #333333 !important;
+            position: static;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2px 2px;
+            color: white !important;
+        }
+
+        .topnav a {
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin-right: 20px;
+        }
+
+        .navbar-brand img {
+            width: 75px;
+            height: auto;
+        }
+
+        .nav-link:hover,
+        .dropdown-menu a:hover {
+            background-color: white;
+            color: black !important;
+        }
+
+        .active-tab {
+            background-color: white !important;
+            color: black !important;
+            font-weight: bold;
+        }
+
+
+    </style>
 </head>
 <body>
     <header style="background-color: lightgray; width: 100%;">
-
         <div class="container text-center">
             <h1 style="margin-bottom:0">UIS Help</h1>
             <p>Help with UIS, Timeclock and TSR</p>
         </div>
-
     </header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo">
-                    <style>
-                        .navbar {
-                            background-color: #333333 !important;
-                            position: static;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            padding: 2px 2px;
-                        }
-
-                        .navbar-brand img {
-                            width: 75px; 
-                            height: auto;
-                        }
-
-                        .nav > li {
-                            margin-right: 20px;
-                        }
-
-                        .nav-link:hover,
-                        .dropdown-menu a:hover {
-                            color: white !important;
-                        }
-                    </style>
-                </a>
-            </div>
-            <div class="container-fluid">
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Time Clock</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UIS">UIS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MICROS">MICROS/Oracle Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AssociateInfo">Associate Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ManagementInfo">Management Info</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link text-dark" asp-area="" data-toggle="dropdown">Other<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="NewUnitOpenings">New Unit Openings</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="UnitShutDown">Unit Shut Down</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="DevicesandPorts">Device Layout and Ports</a></li>
-                            </ul>
-                        </li>
+        <a class="navbar-brand" href="#"><img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo"></a>
+        <button class="navbar-toggle"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ncollapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav">
+                <li class="active "><a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class><a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="Privacy">Time Clock</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="UIS">UIS</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="MICROS">MICROS/Oracle Register</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="AssociateInfo">Associate Info</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" asp-area="#" asp-controller="Home" asp-action="ManagementInfo">Management Info</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link text-light" asp-area="" data-toggle="dropdown">Other<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="NewUnitOpenings">New Unit Openings</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="UnitShutDown">Unit Shut Down</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="DevicesandPorts">Device Layout and Ports</a></li>
                     </ul>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -106,21 +109,20 @@
                 <h6>
                     <b>
                         <center>
-                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue.
-                            If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
+                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue. If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
+                            
                         </center>
                     </b>
                 </h6>
             </div>
         </div>
     </div>
-    </hr>
+    
 
     <div class="container">
         &copy; 2025 - Waffle House <a asp-area="" asp-controller="Home"></a>
     </div>
-        </main>
-    </div>
+
 
         <div class="modal fade" id="UPSag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -137,7 +139,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="UPSb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -156,7 +157,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="UPSc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -173,7 +173,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="UPSd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -192,7 +191,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="UPSe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -209,7 +207,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="UPSf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -228,7 +225,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="UPSag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -245,7 +241,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="UPSShipB" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -282,7 +277,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="UPSShipD" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -299,7 +293,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="UPSShipE" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -338,7 +331,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="PC2VGA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -373,7 +365,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="cp12V" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -410,7 +401,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="Nc44Pow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -445,7 +435,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -485,7 +474,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="noDisplayNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -521,7 +509,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="modal fade" id="noDisplayHDMI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -538,7 +525,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="NoDisplayOld1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -576,7 +562,6 @@
         </div>
     </div>
     </div>
-
     <div class="modal fade" id="TC-SetUpN2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1665,7 +1650,6 @@
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">close</button>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="RegiSetupBelow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
