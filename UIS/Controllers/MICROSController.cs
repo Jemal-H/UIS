@@ -1,19 +1,19 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using UIS.Models;
 
 namespace UIS.Controllers
 {
-    public class HomeController : Controller
+    public class MICROSController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<MICROSController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public MICROSController(ILogger<MICROSController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult MICROS()
         {
             return View();
         }

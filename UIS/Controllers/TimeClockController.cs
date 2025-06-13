@@ -1,22 +1,23 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using UIS.Models;
 
 namespace UIS.Controllers
 {
-    public class HomeController : Controller
+    public class TimeClockController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<TimeClockController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public TimeClockController(ILogger<TimeClockController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Privacy()
         {
             return View();
         }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
