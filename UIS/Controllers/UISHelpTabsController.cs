@@ -51,6 +51,11 @@ namespace UIS.Controllers
             return View();
         }
 
+        public IActionResult Search()
+        {
+            return View();
+        }
+
 
 
 
