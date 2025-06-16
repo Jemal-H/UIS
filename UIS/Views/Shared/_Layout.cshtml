@@ -60,7 +60,7 @@
     </header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <a class="navbar-brand" href="#"><img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo"></a>
-        <div class="topnav"  id="myTopnav">
+        <div class="ncollapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-tabs flex-grow-1">
                 <li class="nav"><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")" asp-area="#" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "UISHelpTabs" && ViewContext.RouteData.Values["action"].ToString() == "Privacy" ? "active text-black" : "text-white")" asp-controller="UISHelpTabs" asp-action="Privacy">Time Clock</a></li>
@@ -71,7 +71,6 @@
                 <li class="dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
                     <a class="nav-link text-light dropdown-toggle @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
                     data-toggle="dropdown" href="#">Other </a>
-                    <a href=" javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i>/</a>
     <ul class="dropdown-menu">
         <li>
             <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "NewUnitOpenings" ? "active text-black" : "text-black")"
