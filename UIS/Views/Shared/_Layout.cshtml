@@ -21,67 +21,63 @@
         </div>
 
     </header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo">
-                    <style>
-                        .navbar {
-                            background-color: #333;
-                            position: static;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            padding: 2px 2px;
-                        }
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <a class="navbar-brand" href="#">
+        <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo">
+    </a>
 
-                        .navbar-brand img {
-                            width: 75px; /* Adjust as needed */
-                            height: auto;
-                        }
-                    </style>
-                </a>
-             </div>
-             <div class="container-fluid">
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Time Clock</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UIS">UIS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MICROS">MICROS/Oracle Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AssociateInfo">Associate Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ManagementInfo">Management Info</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link text-dark" asp-area="" data-toggle="dropdown">Other<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="NewUnitOpenings">New Unit Openings</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="UnitShutDown">Unit Shut Down</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="DevicesandPorts">Device Layout and Ports</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Mobile toggle button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible nav content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-tabs flex-grow-1">
+            <li class="nav">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")" asp-area="#" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "UISHelpTabs" && ViewContext.RouteData.Values["action"].ToString() == "Privacy" ? "active text-black" : "text-white")" asp-controller="UISHelpTabs" asp-action="Privacy">Time Clock</a>
+            </li>
+            <li>
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "UIS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="UIS">UIS</a>
+            </li>
+            <li>
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "MICROS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="MICROS">MICROS/Oracle Register</a>
+            </li>
+            <li>
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "AssociateInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="AssociateInfo">Associate Info</a>
+            </li>
+            <li>
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "ManagementInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a>
+            </li>
+            <li class="dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
+                <a class="nav-link text-light dropdown-toggle @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
+                   data-toggle="dropdown" href="#">Other</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "NewUnitOpenings" ? "active text-black" : "text-black")"
+                           asp-controller="UISHelpTabs" asp-action="NewUnitOpenings">New Unit Openings</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "UnitShutDown" ? "active text-black" : "text-black")"
+                           asp-controller="UISHelpTabs" asp-action="UnitShutDown">Unit Shut Down</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "DevicesandPorts" ? "active text-black" : "text-black")"
+                           asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" asp-area="" asp-controller="UISHelpTabs" asp-action="Search">Search</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
