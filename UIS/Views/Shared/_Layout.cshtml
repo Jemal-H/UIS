@@ -68,9 +68,9 @@
                 <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "MICROS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="MICROS">MICROS/Oracle Register</a></li>
                 <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "AssociateInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="AssociateInfo">Associate Info</a></li>
                 <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "ManagementInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a></li>
-         <li class="dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
-    <a class="nav-link text-light dropdown-toggle @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
-       data-toggle="dropdown" href="#">Other <span class="caret"></span></a>
+                <li class="dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
+                    <a class="nav-link text-light dropdown-toggle @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
+                    data-toggle="dropdown" href="#">Other </a>
     <ul class="dropdown-menu">
         <li>
             <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "NewUnitOpenings" ? "active text-black" : "text-black")"
