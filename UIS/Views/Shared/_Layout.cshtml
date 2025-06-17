@@ -58,37 +58,59 @@
             <p>Help with UIS, Timeclock and TSR</p>
         </div>
     </header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <a class="navbar-brand" href="#"><img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo"></a>
-        <div class="ncollapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-tabs flex-grow-1">
-                <li class="nav"><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")" asp-area="#" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "UISHelpTabs" && ViewContext.RouteData.Values["action"].ToString() == "Privacy" ? "active text-black" : "text-white")" asp-controller="UISHelpTabs" asp-action="Privacy">Time Clock</a></li>
-                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "UIS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="UIS">UIS</a></li>
-                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "MICROS" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="MICROS">MICROS/Oracle Register</a></li>
-                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "AssociateInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="AssociateInfo">Associate Info</a></li>
-                <li><a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "ManagementInfo" ? "active text-black" : "text-white")" asp-area="#" asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a></li>
-                <li class="dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
-                    <a class="nav-link text-light dropdown-toggle @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
-                    data-toggle="dropdown" href="#">Other </a>
-    <ul class="dropdown-menu">
-        <li>
-            <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "NewUnitOpenings" ? "active text-black" : "text-black")"
-               asp-controller="UISHelpTabs" asp-action="NewUnitOpenings">New Unit Openings</a>
-        </li>
-        <li>
-            <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "UnitShutDown" ? "active text-black" : "text-black")"
-               asp-controller="UISHelpTabs" asp-action="UnitShutDown">Unit Shut Down</a>
-        </li>
-        <li>
-            <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "DevicesandPorts" ? "active text-black" : "text-black")"
-               asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
-        </li>
-    </ul>
-</li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+    <a class="navbar-brand" href="#">
+        <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-tabs flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")"
+                   asp-area="#" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "UISHelpTabs" && ViewContext.RouteData.Values["action"].ToString() == "Privacy" ? "active text-black" : "text-white")"
+                   asp-controller="UISHelpTabs" asp-action="Privacy">Time Clock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "UIS" ? "active text-black" : "text-white")"
+                   asp-area="#" asp-controller="UISHelpTabs" asp-action="UIS">UIS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "MICROS" ? "active text-black" : "text-white")"
+                   asp-area="#" asp-controller="UISHelpTabs" asp-action="MICROS">MICROS/Oracle Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "AssociateInfo" ? "active text-black" : "text-white")"
+                   asp-area="#" asp-controller="UISHelpTabs" asp-action="AssociateInfo">Associate Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light @(ViewContext.RouteData.Values["action"].ToString() == "ManagementInfo" ? "active text-black" : "text-white")"
+                   asp-area="#" asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a>
+            </li>
+            <li class="nav-item dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")">
+                <a class="nav-link dropdown-toggle text-light @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active text-black" : "text-white")"
+                   href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Other
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "NewUnitOpenings" ? "active text-black" : "text-black")"
+                       asp-controller="UISHelpTabs" asp-action="NewUnitOpenings">New Unit Openings</a>
+                    <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "UnitShutDown" ? "active text-black" : "text-black")"
+                       asp-controller="UISHelpTabs" asp-action="UnitShutDown">Unit Shut Down</a>
+                    <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "DevicesandPorts" ? "active text-black" : "text-black")"
+                       asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
