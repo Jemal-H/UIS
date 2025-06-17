@@ -58,7 +58,7 @@
             <p>Help with UIS, Timeclock and TSR</p>
         </div>
     </header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-5">
     <a class="navbar-brand" href="#">
         <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo">
     </a>
@@ -67,7 +67,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="container-fluid" id="navbarNav">
         <ul class="navbar-nav nav-tabs flex-grow-1">
             <li class="nav-item">
                 <a class="nav-link text-light @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active text-black" : "text-white")"
