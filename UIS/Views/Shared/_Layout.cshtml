@@ -58,16 +58,17 @@
             <p>Help with UIS, Timeclock and TSR</p>
         </div>
     </header>
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-5">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#">
             <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo" style="width: 75px;">
         </a>
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
@@ -96,7 +97,6 @@
                        asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a>
                 </li>
 
-
                 <li class="nav-item dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active" : "")">
                     <a class="nav-link dropdown-toggle"
                        href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,16 +109,13 @@
                            asp-controller="UISHelpTabs" asp-action="UnitShutDown">Unit Shut Down</a>
                         <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "DevicesandPorts" ? "active" : "")"
                            asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
-
                     </div>
                 </li>
-                    
             </ul>
-
         </div>
-
     </div>
 </nav>
+
 
     <div class="container">
         <main role="main" class="pb-3">
