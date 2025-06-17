@@ -59,16 +59,18 @@
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-5">
-    <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="@Url.Content("~/Images/waffle-house-logo.svg")" alt="Waffle House Logo" style="width: 75px;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
+    <div class="container-fluid">
+      
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -96,6 +98,7 @@
                        asp-controller="UISHelpTabs" asp-action="ManagementInfo">Management Info</a>
                 </li>
 
+
                 <li class="nav-item dropdown @(new[] { "NewUnitOpenings", "UnitShutDown", "DevicesandPorts" }.Contains(ViewContext.RouteData.Values["action"]?.ToString()) ? "active" : "")">
                     <a class="nav-link dropdown-toggle"
                        href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,11 +111,16 @@
                            asp-controller="UISHelpTabs" asp-action="UnitShutDown">Unit Shut Down</a>
                         <a class="dropdown-item @(ViewContext.RouteData.Values["action"]?.ToString() == "DevicesandPorts" ? "active" : "")"
                            asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
+
                     </div>
                 </li>
+                    
             </ul>
+
         </div>
+
     </div>
+       
 </nav>
 
     <div class="container">
