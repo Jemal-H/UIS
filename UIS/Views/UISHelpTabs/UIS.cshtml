@@ -183,7 +183,7 @@
                             <button data-toggle="collapse" class="btn btn-primary" data-target="#phone1"><u>The set-up phone router diagram.  </u></button>
                             <div id="phone1" class="collapse">
                                 <div class="col-lg-10">
-                                <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")" class="img-responsive center-block" style="max-width: 500px; height: auto;">
+                                <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")" class="img-responsive center-block" style="max-width: 425px; height: auto;">
                                 </div>
 
                             </div>
@@ -279,8 +279,7 @@
                 <div class="row">
                     <button class="btn btn-sm btn-primary " data-toggle="collapse" data-target="#image1">Show Image 1</button>
                     <div id="image1" class="collapse mt-2">
-                        <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")" class="img-responsive center-block" style="max-width: 500px; height: auto;" alt="Printer Back">
-
+                        @Html.Partial("_Keyboard")
                     </div>
                 </div>
             
