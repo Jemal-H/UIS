@@ -110,13 +110,13 @@
                         </div>
                     </li>
                     <li>
+                        <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
+                            <input name="searchString" type="text" class="form-control" />
+                            <button class="nav-link btn btn-outline my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </li>
                 </ul>
             </div>
-            <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
@@ -4330,6 +4330,7 @@
             </div>
         </div>
         </div>
+        </div>
 
         <div class="modal fade" id="RegRouterSt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -4346,6 +4347,7 @@
                     <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal"></button>
                 </div>
             </div>
+        </div>
         </div>
         </div>
 
