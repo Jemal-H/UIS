@@ -64,41 +64,31 @@ body {
     margin: 10px;
 }
 
-
-    .search-box:hover > .search-txt {
-        width: 240px;
-        padding: 0 6px;
-    }
-
-    .search-box:hover > .search-btn {
-        background: white;
-    }
-
-.search-btn {
-    color: #e74c3c;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #34495e;
+ .search-box {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-decoration: none;
-    overflow: hidden;
+    border-radius: 40px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    width: 100%;
 }
 
 .search-txt {
     border: none;
-    background: none;
     outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+    padding: 5px 10px;
+    flex: 1;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #333;
+}
 
 
 /* responsive*/
