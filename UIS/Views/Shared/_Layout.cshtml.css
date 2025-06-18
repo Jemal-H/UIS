@@ -56,38 +56,29 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    border-radius: 40px;
-    padding: 10px;
-    background-color: white;
-    transition: 0.4s;
-    max-width: 300px;
-    margin: 10px;
-}
-
- .search-box {
-    display: flex;
-    align-items: center;
+    background: #34495e;        /* Dark background */
     border-radius: 40px;
     padding: 5px 10px;
-    background-color: white;
-    border: 1px solid #ccc;
-    max-width: 400px;
-    width: 100%;
+    width: 100%;                /* Span full width of its container */
+    max-width: 600px;           /* Limit width on larger screens */
+    margin: 0 auto;             /* Center horizontally */
 }
 
 .search-txt {
+    flex: 1;                    /* Take available space */
     border: none;
+    background: none;
     outline: none;
+    color: white;               /* White input text */
     padding: 5px 10px;
-    flex: 1;
 }
 
 .search-btn {
-    background-color: transparent;
+    background: none;
     border: none;
-    cursor: pointer;
+    color: white;
     padding: 5px 10px;
-    color: #333;
+    cursor: pointer;
 }
 
 
