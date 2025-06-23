@@ -37,7 +37,7 @@
         }
 
         .navbar-brand img {
-            width: 90px;
+            width: 75px;
             height: auto;
         }
 
@@ -71,7 +71,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active" : "")"
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")"
                            asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
@@ -109,12 +109,10 @@
                                asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
                         </div>
                     </li>
-                    <li>
-                        <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
-                            <input name="searchString" type="text" class="form-control" />
-                            <button class="nav-link btn btn-outline my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </li>
+                    <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
+                        <input name="searchString" type="text" class="form-control" />
+                        <button class="nav-link btn btn-outline my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </ul>
             </div>
         </div>
@@ -134,8 +132,8 @@
                 <h6>
                     <b>
                         <center>
-                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> so that we may help you resolve the issue. If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
-
+                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> 
+                            so that we may help you resolve the issue. If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
                         </center>
                     </b>
                 </h6>
