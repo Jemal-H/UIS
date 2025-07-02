@@ -1,17 +1,12 @@
-﻿<h4>Search</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Search">
-
-            <div class="form-group">
-                <label for="SearchPhrase" class="control-label"></label>
-                <input for="SearchPhrase" class="form-control" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Search" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container-fluid "> 
+    <div class="row">
+        <div class="col-12">
+            <form asp-action="Search" class="search-box">
+                <input type="text" name="SearchPhrase" class="search-txt" placeholder="Type to search..." />
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
     </div>
 </div>
-
