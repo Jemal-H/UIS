@@ -47,6 +47,32 @@
             color: black !important;
         }
 
+        .search-form{
+            margin-top:5px;
+            float:right;
+            margin-right:100px;
+        }
+
+        input[type=text]{
+            padding:7px;
+            border:none;
+            font-size:16px;
+            font-family:sans-serif;
+        }
+
+        button{
+            float:right;
+            background: #D3D3D3;
+            color: #333333;
+            border-radius:0 5px 5px 0;
+            cursor:pointer;
+            position:relative;
+            padding:7px;
+            font-family:sans-serif;
+            border:none;
+            font-size:16px;
+        }
+
     </style>
 </head>
 <body>
@@ -109,11 +135,11 @@
                                asp-controller="UISHelpTabs" asp-action="DevicesandPorts">Device Layout and Ports</a>
                         </div>
                     </li>
-                    <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
-                        <input name="searchString" type="text" class="form-control" />
-                        <button class="nav-link btn btn-outline my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
                 </ul>
+                <form class="search-form">
+                    <input type = "text" placeholder="Search" />
+                    <button>Search</button>
+                </form>
             </div>
         </div>
     </nav>
