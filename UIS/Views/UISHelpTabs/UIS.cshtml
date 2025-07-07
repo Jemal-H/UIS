@@ -32,24 +32,27 @@
                                 <li>Four Blue</li>
                             </ol>
                             <br />
-
-
-
                             <!--<image src="" class="full" alt="image showing the status of the AER1600">-->
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#aer">Show aer1600</button>
+                        <div id="aer" class="collapse">
+                            <div class="row">
+                                <img src="@Url.Content("~/Images/AER1600.jpg")" class="img-responsive img-thumbnail center-block"
+                                     style="max-width: 300px; height: auto;"
+                                     alt="AER1600"
+                                     data-toggle="modal"
+                                     data-target="#AER1600">
+                            </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS1">1.AER1600</button>
-                                <div id="UIS1" class="collapse">
-                                    <div class="row">
-                                        <div class="col">
-                                        <img src="@Url.Content("~/Images/AER1600.jpg")" class="img-responsive img-thumbnail center-block" style="max-width: 400px; height: auto;" alt="AER1600 Keyboard Layout" />
-                                    </div>
+                        <div class="modal fade" id="AER1600" tabindex="-1" role="dialog" aria-labelledby="UPScModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <img src="@Url.Content("~/Images/AER1600.jpg")" class="img-fluid" alt="aer1600">
                                     </div>
                                 </div>
-
                             </div>
+                        </div>
                         </div>
 
                         <div class="col-sm-3">
@@ -60,20 +63,28 @@
                             </ol>
                             <br />
                             <!--<image src="" class="full" alt="image showing the status of the E300">-->
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS2">2.E300 ONLINE</button>
-                                <div id="UIS2" class="collapse">
-                                    <div class="col-lg-10">
-                                    <img src="@Url.Content("~/Images/E300.jpg")" class="img-responsive img-thumbnail center-block" style="max-width: 400px; height: auto;" alt="E300 Keyboard Layout" />
-                                </div>
-                                </div>
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#Collapsee300">Show e300</button>
+                        <div id="Collapsee300" class="collapse">
+                            <div class="row">
+                                <img src="@Url.Content("~/Images/E300.jpg")" class="img-responsive img-thumbnail center-block"
+                                     style="max-width: 300px; height: auto;"
+                                     alt="E300"
+                                     data-toggle="modal"
+                                     data-target="#e300">
                             </div>
                         </div>
 
-
-                    </div>
+                        <div class="modal fade" id="e300" tabindex="-1" role="dialog" aria-labelledby="e300label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <img src="@Url.Content("~/Images/E300.jpg")" class="img-fluid" alt="E300">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                 </div>
                     <ul>
                         <li>If you do not see the online indicator lights lit on the router, make sure the power brick is plugged into a power outlet or power strip and that the power switch next to the port labeled '1' is in the on position. </li>
                         <li>The router will take 5-10 minutes to reconnect to the AT&T network.</li>
@@ -85,7 +96,7 @@
                     <p>If these troubleshooting steps do not work, the problem with your router may be more significant, please call UIS tech support at <b><u>770-729-5933</u></b> and select <b>option 3</b> for more assistance.</p>
                 </div>
             </div>
-
+       
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse11">ATA-Phone Modem </a>
