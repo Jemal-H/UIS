@@ -196,11 +196,11 @@
                     <br />
 
                     <li>The time clock monitor and office monitor should show the same on both monitors.</li>
-                    <li>On the keyboard in the office, you will press the window logo and the letter 'P.' <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCollapse">Show Keyboard</button></li>
-                    <div id="keyboardCollapse" class="collapse">
+                    <li>On the keyboard in the office, you will press the window logo and the letter 'P.' </li>
+                    <div class="keyboard-container">
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardModal">Show Keyboard</button>
                         @Html.Partial("_Keyboard")
                     </div>
-
                     <li>A "Project" option menu will show on your office monitor. <button class="btn btn-primary" data-toggle="collapse" data-target="#TC_MirrorCollapse">Show Image</button></li>
                     <div id="TC_MirrorCollapse" class="collapse">
                         @Html.Partial("_TC_Mirror")
