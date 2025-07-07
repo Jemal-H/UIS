@@ -1,10 +1,13 @@
-﻿<div class="row">
-    <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")"
-         class="img-responsive center-block"
-         style="max-width: 300px; height: auto;"
-         alt="Keyboard Shortcut"
-         data-toggle="modal"
-         data-target="#keyboardModal">
+﻿<button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCollapse">Show Keyboard</button>
+<div id="keyboardCollapse" class="collapse">
+    <div class="row">
+        <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")"
+             class="img-responsive"
+             style="max-width: 500px; height: auto;"
+             alt="Keyboard Shortcut"
+             data-toggle="modal"
+             data-target="#keyboardModal">
+    </div>
 </div>
 
 <div class="modal fade" id="keyboardModal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">

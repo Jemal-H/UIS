@@ -196,11 +196,12 @@
                     <br />
 
                     <li>The time clock monitor and office monitor should show the same on both monitors.</li>
-                    <li>On the keyboard in the office, you will press the window logo and the letter 'P.' <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCollapse">Show Keyboard</button></li>
-                    <div id="keyboardCollapse" class="collapse">
+                    <li>On the keyboard in the office, you will press the window logo and the letter 'P.' </li>
+                    <div class="keyboard-container">
                         @Html.Partial("_Keyboard")
                     </div>
 
+                    
                     <li>A "Project" option menu will show on your office monitor. <button class="btn btn-primary" data-toggle="collapse" data-target="#TC_MirrorCollapse">Show Image</button></li>
                     <div id="TC_MirrorCollapse" class="collapse">
                         @Html.Partial("_TC_Mirror")
@@ -245,9 +246,9 @@
                         <ul>
                             <li>All three keys must be held down simultaneously.</li>
                         </ul>
-                        <div id="keyboardCollapse" class="collapse">
+                        <div class="keyboard-container">
                             @Html.Partial("_Keyboard")
-                        </div>
+                        
                     </li>
                     <li>After 10 seconds, check the monitor—it should now be correctly oriented.</li>
                     <li>Repeat steps 1–3 if the monitor doesn't rotate properly on the first attempt.</li>
