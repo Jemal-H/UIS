@@ -1,1 +1,18 @@
-﻿<img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")" class="img-responsive" style="max-width: 400px; height: auto;">
+﻿<div class="row">
+    <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")"
+         class="img-responsive center-block"
+         style="max-width: 300px; height: auto;"
+         alt="Keyboard Shortcut"
+         data-toggle="modal"
+         data-target="#keyboardModal">
+</div>
+
+<div class="modal fade" id="keyboardModal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")" class="img-fluid" alt="Keyboard Shortcut">
+            </div>
+        </div>
+    </div>
+</div>
