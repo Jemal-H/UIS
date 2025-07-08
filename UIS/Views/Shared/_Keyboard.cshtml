@@ -1,20 +1,28 @@
-﻿<button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCollapse">Show Keyboard</button>
-<div id="keyboardCollapse" class="collapse">
+﻿@model string
+
+@{
+    var collapseId = $"uis_keyboardCollapse_{Model}";
+    var modalId = $"uis_keyboardModal_{Model}";
+}
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#@collapseId">Show Keyboard</button>
+
+<div id="@collapseId" class="collapse">
     <div class="row">
         <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")"
              class="img-responsive"
-             style="max-width: 500px; height: auto;"
-             alt="Keyboard Shortcut"
+             style="max-width: 400px; height: auto;"
+             alt="uis_keyboard_winP"
              data-toggle="modal"
-             data-target="#keyboardModal">
+             data-target="#@modalId">
     </div>
 </div>
 
-<div class="modal fade" id="keyboardModal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+<div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body text-center">
-                <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")" class="img-fluid" alt="Keyboard Shortcut">
+                <img src="@Url.Content("~/Images/uis_keyboard_winP.PNG")" class="img-fluid" alt="uis_keyboard_winP">
             </div>
         </div>
     </div>

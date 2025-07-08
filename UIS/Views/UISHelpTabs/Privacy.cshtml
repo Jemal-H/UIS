@@ -201,10 +201,12 @@
                         @Html.Partial("_Keyboard")
                     </div>
 
-                    <li>A "Project" option menu will show on your office monitor. <button class="btn btn-primary" data-toggle="collapse" data-target="#TC_MirrorCollapse">Show Image</button></li>
-                    <div id="TC_MirrorCollapse" class="collapse">
-                        @Html.Partial("_TC_Mirror")
-                    </div>
+                    <li>A "Project" option menu will show on your office monitor. </li>
+                        <div class="TC-container">
+                            @Html.Partial("_TC_Mirror")
+                        </div>
+                        
+
                     <li>Use the mouse to select "Extend" on the "Project" option menu.</li>
                     <li>Once you've selected "Extend," minimize the UIS system application. </li>
                     <li>Once you've minimized the UIS system application. Double click on the desktop icon labeled "Set Screen Size to 1064." </li>
@@ -241,12 +243,20 @@
                     <li>
                         On the keyboard in the office, press and hold the following keys for 10 seconds:<br>
                         Ctrl key, Alt, and Up Arrow (&#8679)
-                        <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCollapse">Show Images</button>
                         <ul>
                             <li>All three keys must be held down simultaneously.</li>
                         </ul>
-                        <div class="keyboard-container">
-                            @Html.Partial("_Keyboard")
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCommand">Show image</button>
+                        <div id="keyboardCommand" class="collapse">
+                            <div class="row">
+                                <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")"
+                                     class="img-responsive"
+                                     style="max-width: 500px; height: auto;"
+                                     alt="keyboardCommand Shortcut"
+                                     data-toggle="modal"
+                                     data-target="#keyboardCommand">
+                            </div>
+                        </div>
                         
                     </li>
                     <li>After 10 seconds, check the monitor—it should now be correctly oriented.</li>
@@ -264,15 +274,19 @@
             <div class="panel-body">
                 <p>Office Monitor and Timeclock monitor show the same screen</p>
                 <ul>
-                    <li>Press and hold the "Windows" logo key <img src="@Url.Content("~/Images/uis_keyboard_win.PNg")" )" width="24" height="24" alt="Home Button: resembles a house"> and the letter "P" key on your keyboard at the same time. <button class="btn btn-primary" data-toggle="collapse" data-target="#TC1" , "TC2">Show Images</button></li>
+                    <li>Press and hold the "Windows" logo key <img src="@Url.Content("~/Images/uis_keyboard_win.PNg")" )" width="24" height="24" alt="Home Button: resembles a house"> and the letter "P" key on your keyboard at the same time.</li>
+                    
+                    <div class="keyboard-container">
+                        @Html.Partial("_Keyboard","Privacy")
+                    </div>
+                   
 
-                    <div id="TC1" class="collapse">
-                        @Html.Partial("_Keyboard")
+                    <li>A "Project" option menu will pop up and select "Extend" this will stop the screens from mirroring.</li>
+
+                    <div class="TC-container">
+                        @Html.Partial("_TC_Mirror","Privacy")
                     </div>
-                    <li>A "Project" option menu will pop up and select "Extend" this will stop the screens from mirroring.<button class="btn btn-primary" data-toggle="collapse" data-target="#TC2">Show Images</button></li>
-                    <div id="TC2" class="collapse">
-                        @Html.Partial("_TC_Mirror")
-                    </div>
+
                     <li>You will then minimize the UIS system</li>
                     @Html.Partial("_Minimizeuis")
                     <li>Once UIS is minimized look for the icon labeled "Set Screen Size to 1024" and double click the icon and the office monitor and timeclock monitor resolution will automatically align.</li>
