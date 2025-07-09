@@ -1,1 +1,29 @@
-﻿<img src="@Url.Content("~/Images/UPSag.jpg")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="UPSagImage">
+﻿@model string
+
+@{
+    var collapseId = $"uis_sagCollapse_{Model}";
+    var modalId = $"uis_sagModal_{Model}";
+}
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#@collapseId">Show Images</button>
+
+<div id="@collapseId" class="collapse">
+    <div class="row">
+        <img src="@Url.Content("~/Images/UPSag.jpg")"
+             class="img-responsive"
+             style="max-width: 400px; height: auto;"
+             alt="UPSagImage" 
+             data-toggle="modal"
+             data-target="#@modalId">
+    </div>
+</div>
+
+<div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="@Url.Content("~/Images/UPSag.jpg")" class="img-fluid" alt="UPSagImage">
+            </div>
+        </div>
+    </div>
+</div>

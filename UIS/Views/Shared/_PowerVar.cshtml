@@ -72,7 +72,22 @@
             <button class="btn btn-primary" data-toggle="collapse" data-target="#var5">Show Images</button>
             <div id="var5" class="collapse">
                 <div class="row">
-                    <img src="@Url.Content("~/Images/UPSd.jpg")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="UPSdExample">
+                    <img src="@Url.Content("~/Images/UPSd.jpg")"
+                         class="img-responsive center-block"
+                         style="max-width: 300px; height: auto;"
+                         alt="UPSdExample" "
+                         data-toggle="modal"
+                         data-target="#UPSdModal">
+                </div>
+            </div>
+
+            <div class="modal fade" id="UPSdModal" tabindex="-1" role="dialog" aria-labelledby="UPSdModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="@Url.Content("~/Images/UPSd.jpg")" class="img-fluid" alt="UPSDImage">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -80,7 +95,22 @@
             <button class="btn btn-primary" data-toggle="collapse" data-target="#var7">Show Images</button>
             <div id="var7" class="collapse">
                 <div class="row">
-                    <img src="@Url.Content("~/Images/UPSe.jpg")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="UPSeImage">
+                    <img src="@Url.Content("~/Images/UPSe.jpg")"
+                         class="img-responsive center-block"
+                         style="max-width: 300px; height: auto;"
+                         alt="UPSeExample" "
+                         data-toggle="modal"
+                         data-target="#UPSeModal">
+                </div>
+            </div>
+
+            <div class="modal fade" id="UPSeModal" tabindex="-1" role="dialog" aria-labelledby="UPSeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="@Url.Content("~/Images/UPSe.jpg")" class="img-fluid" alt="UPSeImage">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -88,17 +118,29 @@
             <button class="btn btn-primary" data-toggle="collapse" data-target="#var6">Show Images</button>
             <div id="var6" class="collapse">
                 <div class="row">
-                    <img src="@Url.Content("~/Images/UPSf.jpg")" class="img-responsive center-block" style="max-width: 300px; height: auto;" alt="UPSFImage">
+                    <img src="@Url.Content("~/Images/UPSf.jpg")"
+                         class="img-responsive center-block"
+                         style="max-width: 300px; height: auto;"
+                         alt="UPSfExample" "
+                         data-toggle="modal"
+                         data-target="#UPSfModal">
+                </div>
+            </div>
+
+            <div class="modal fade" id="UPSfModal" tabindex="-1" role="dialog" aria-labelledby="UPSfModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="@Url.Content("~/Images/UPSf.jpg")" class="img-fluid" alt="UPSfImage">
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <li>If there is a warning label on the unit, remove it now. Press and hold the power button for 3 seconds to turn it on.</li>
-            <button class="btn btn-primary" data-toggle="collapse" data-target="#var8">Show Images</button>
-            <div id="var8" class="collapse">
                 <div class="row">
                     @Html.Partial("_UpsagIMG")
                 </div>
-            </div>
         </ol>
         <p>Note: if you plan to ship the powervar to another location, weather that be another unit or to return it to UIS, please follow the packing instructions below to ensure that the shipment can be made safely.</p>
 
