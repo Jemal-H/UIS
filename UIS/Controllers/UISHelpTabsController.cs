@@ -13,7 +13,7 @@ namespace UIS.Controllers
             _logger = logger;
         }
 
-        public IActionResult Privacy()
+        public IActionResult TimeClock()
         {
             return View();
         }

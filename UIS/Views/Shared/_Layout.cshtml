@@ -113,8 +113,8 @@
                            asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "Privacy" ? "active" : "")"
-                           asp-controller="UISHelpTabs" asp-action="Privacy">Time Clock</a>
+                        <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "TimeClock" ? "active" : "")"
+                           asp-controller="UISHelpTabs" asp-action="TimeClock">Time Clock</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "UIS" ? "active" : "")"

@@ -37,8 +37,9 @@
                                         <img src="@Url.Content("~/Images/TC-SetUpN1.jpg")" 
                                         data-toggle="modal" 
                                         data-target="#modalTCS1"
-                                        class="img-responsive img-thumbnail center-block"
+                                        class="img-responsive shadow img-thumbnail center-block"
                                         style="max-width: 100%; height: auto;" />
+                                        <br/>
                                         <p class="text-wrap">
                                             The blue VGA cable (right) should be plugged into the VGA to HDMI adapter (left).
                                         </p>
@@ -64,8 +65,9 @@
                                         <img src="@Url.Content("~/Images/TC-SetUpN2.jpg")" 
                                         data-toggle="modal" 
                                         data-target="#modalTCS2"
-                                             class="img-responsive img-thumbnail center-block"
-                                             style="max-width: 100%; height: auto;" />
+                                        class="img-responsive shadow img-thumbnail center-block"
+                                        style="max-width: 100%; height: auto;" />
+                                        <br />
                                         <p class="text-wrap">
                                             Make sure the thumb screws on the blue VGA cable are secured.
                                         </p>
@@ -93,8 +95,9 @@
                                         <img src="@Url.Content("~/Images/TC-SetUpN3.jpg")" 
                                         ata-toggle="modal" 
                                         data-target="#modalTCS3"
-                                             class="img-responsive img-thumbnail center-block"
-                                             style="max-width: 100%; height: auto;" />
+                                        class="img-responsive shadow img-thumbnail center-block"
+                                        style="max-width: 100%; height: auto;" />
+                                        <br />
                                         <p class="text-wrap">
                                             The ports the time clock is plugged into will look like this. Make sure that the adapter is plugged into the HDMI port below the red network cable. If it does not, please check for the correct HDMI to VGA adapter.
                                         </p>
@@ -119,8 +122,9 @@
                                         <img src="@Url.Content("~/Images/TC-SetUpN4.jpg")" 
                                         data-toggle="modal"
                                         data-target="#modalTCS4" 
-                                        class="img-responsive img-thumbnail center-block"
+                                        class="img-responsive shadow img-thumbnail center-block"
                                         style="max-width: 100%; height: auto;" />
+                                        <br />
                                         <p class="text-wrap">
                                             The cable set up for the time clock in the computer will look something like this when plugged into a computer of this style. These steps still apply to other new (zotak "z-box") computers.
                                         </p>
@@ -175,8 +179,9 @@
                                         <img src="@Url.Content("~/Images/TcPwr-1.JPg")" )" 
                                         data-toggle="modal" 
                                         data-target="#modalTCS5"
-                                             class="img-responsive img-thumbnail center-block"
-                                             style="max-width: 100%; height: auto;" />
+                                        class="img-responsive shadow img-thumbnail center-block"
+                                        style="max-width: 100%; height: auto;" />
+                                        <br />
                                         <p class="text-wrap">
                                             On <b>newer</b> ELO monitors, the power button is found to the bottom right side of the screen.  It is the right most button.
                                         </p>
@@ -194,17 +199,18 @@
 
                             <div class="col-md-6">
                                 <button class="btn btn-primary" data-toggle="collapse" data-target="#TCS6">
-                                    Power button on the <b>old style</b> of Elo
+                                    Power Button on the <b>new model</b> of Elo
                                 </button>
                                 <div id="TCS6" class="collapse">
                                     <div class="w-100">
-                                        <img src="@Url.Content("~/Images/TcPwr-2.JPg")" )" 
-                                        data-toggle="modal" 
-                                        data-target="#modalTCS6" 
-                                        class="img-responsive img-thumbnail" 
-                                        style="max-width: 100%; height: auto;" />
+                                        <img src="@Url.Content("~/Images/TcPwr-2.JPg")" )"
+                                             data-toggle="modal"
+                                             data-target="#modalTCS6"
+                                             class="img-responsive shadow img-thumbnail center-block"
+                                             style="max-width: 100%; height: auto;" />
+                                        <br />
                                         <p class="text-wrap">
-                                            On <b>older</b> ELO monitors, the power button is found to the right side of the screen. It is the bottom most button.
+                                            On <b>newer</b> ELO monitors, the power button is found to the bottom right side of the screen.  It is the right most button.
                                         </p>
                                     </div>
                                 </div>
@@ -292,14 +298,14 @@
                     <li>Press and hold the "Windows" logo key <img src="@Url.Content("~/Images/uis_keyboard_win.PNg")" )" width="24" height="24" alt="Home Button: resembles a house"> and the letter "P" key on your keyboard at the same time.</li>
                     
                     <div class="keyboard-container">
-                        @Html.Partial("_Keyboard","Privacy")
+                        @Html.Partial("_Keyboard","TimeClock")
                     </div>
                    
 
                     <li>A "Project" option menu will pop up and select "Extend" this will stop the screens from mirroring.</li>
 
                     <div class="TC-container">
-                        @Html.Partial("_TC_Mirror","Privacy")
+                        @Html.Partial("_TC_Mirror","TimeClock")
                     </div>
 
                     <li>You will then minimize the UIS system</li>
@@ -346,7 +352,7 @@
                         <div class="col-sm-4">
                             <center><u>Old model Elo</u></center>
                             <img src="@Url.Content("~/Images/noDisplayOld.JPG")" 
-                            class="img-responsive img-thumbnail center-block" 
+                            class="img-responsive shadow img-thumbnail center-block" 
                             style="max-width: 100%; height: auto;"
                             alt="Old Model Elo" 
                             data-toggle="modal" 
@@ -364,7 +370,7 @@
                         <div class="col-sm-4">
                             <center><u>New model Elo</u></center>
                             <img src="@Url.Content("~/Images/noDisplayNew.JPg")" 
-                            class="img-responsive img-thumbnail center-block" 
+                            class="img-responsive shadow img-thumbnail center-block" 
                             style="max-width: 1000px; width: 100%;" 
                             alt="New Model Elo" 
                             data-toggle="modal" 
@@ -400,7 +406,7 @@
                         <div class="col-sm-4">
                             <center><u>Example Zotak Computer</u></center>
                             <img src="@Url.Content("~/Images/noDisplayZbox.JPG")"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                             style="max-width: 1000px; width: 100%;"
                             alt="No Display Zbox"
                             data-toggle="modal"
@@ -418,7 +424,7 @@
                         <div class="col-sm-4">
                             <center><u>New model Elo</u></center>
                             <img src="@Url.Content("~/Images/noDisplayHDMI.JPG")"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 1000px; width: 100%;" 
                             alt="No Display HDMI" 
                             data-toggle="modal" 
