@@ -1,8 +1,8 @@
 ﻿@model string
 
 @{
-    var collapseId = $"uis_sagCollapse_{Model}";
-    var modalId = $"uis_sagModal_{Model}";
+    var collapseId = $"MICROS_sagCollapse_{Model}";
+    var modalId = $"MICROS_sagModal_{Model}";
 }
 
 <button class="btn btn-primary" data-toggle="collapse" data-target="#@collapseId">Show Images</button>
@@ -10,8 +10,8 @@
 <div id="@collapseId" class="collapse">
     <div class="row">
         <img src="@Url.Content("~/Images/UPSag.jpg")"
-             class="img-responsive"
-             style="max-width: 400px; height: auto;"
+             class="img-responsive img-thumbnail shadow center-block"
+             style="max-width: 300px; height: auto;"
              alt="UPSagImage" 
              data-toggle="modal"
              data-target="#@modalId">
