@@ -1,40 +1,40 @@
-﻿
-@{
-    ViewData["Title"] = "UIS";
-}
+﻿﻿
+    @{
+        ViewData["Title"] = "UIS";
+    }
 
-<h1>UIS</h1>
+    <h1>UIS</h1>
 
     <div class="panel-group" id="accUIS">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse12">Back Office Router</a>
-            </h4>
-        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse12">Back Office Router</a>
+                </h4>
+            </div>
 
-        <div id="Ucollapse12" class="panel-collapse collapse">
-            <div class="panel-body">
-                <h3>Back Office Router - Troubleshooting</h3>
+            <div id="Ucollapse12" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h3>Back Office Router - Troubleshooting</h3>
 
-                <h4>Showing no indicator lights</h4>
-                <ol>
-                    <li>Ensure the power cable is plugged into the router and the power brick is plugged into the wall.</li>
-                    <li>The router will take 5–10 minutes to reconnect to the AT&T network.</li>
-                </ol>
+                    <h4>Showing no indicator lights</h4>
+                    <ol>
+                        <li>Ensure the power cable is plugged into the router and the power brick is plugged into the wall.</li>
+                        <li>The router will take 5–10 minutes to reconnect to the AT&T network.</li>
+                    </ol>
 
-                <hr />
-                <h4>Not showing the correct indicator lights for being online</h4>
-                <p>There are two models of Cradlepoint router used for UIS computers and phones in the office:</p>
+                    <hr />
+                    <h4>Not showing the correct indicator lights for being online</h4>
+                    <p>There are two models of Cradlepoint router used for UIS computers and phones in the office:</p>
 
-                <div class="row">
-                    <div class="col-sm-3">
-                        <b>AER1600:</b>
-                        <ul>
-                            <li>Three Green</li>
-                            <li>Four Blue</li>
-                        </ul>
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <b>AER1600:</b>
+                            <ul>
+                                <li>Three Green</li>
+                                <li>Four Blue</li>
+                            </ul>
+                        </div>
 
                     <div class="col-sm-5">
                         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseAER1600">
@@ -60,139 +60,104 @@
                     </div>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-sm-3">
-                        <b>E300:</b>
-                        <ul>
-                            <li>Three Green</li>
-                            <li>Four Blue</li>
-                        </ul>
-                    </div>
+                    <div class="row mt-4">
+                        <div class="col-sm-3">
+                            <b>E300:</b>
+                            <ul>
+                                <li>Three Green</li>
+                                <li>Four Blue</li>
+                            </ul>
+                        </div>
 
                     <div class="col-sm-5">
-                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseE300">
-                            2. E300 ONLINE
-                        </button>
-                        <div id="collapseE300" class="collapse mt-2">
+                        <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS2">2. E300 ONLINE</button>
+                        <div id="UIS2" class="collapse">
                             <img src="@Url.Content("~/Images/E300.jpg")"
-                                 data-toggle="modal"
-                                 data-target="#modalE300"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 100%; height: auto;" />
-                        </div>
-                    </div>
-                    <div class="modal fade" id="modalE300" tabindex="-1" role="dialog" aria-labelledby="modalLabelE300" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/E300.jpg")" class="img-fluid" alt="E300" />
-                                </div>
-                            </div>
+                                 class="img-responsive img-thumbnail center-block"
+                                 style="max-width: 400px; height: auto;"
+                                 alt="E300 Keyboard Layout" />
                         </div>
                     </div>
                 </div>
 
-                <hr />
-                <ul>
-                    <li>If no online indicator lights are visible, verify that the power brick is plugged into a working outlet and the power switch near port '1' is on.</li>
-                    <li>Wait 5–10 minutes for the router to reconnect.</li>
-                    <li>If it takes longer than 10 minutes, perform a reset using a paperclip or similar object to press the button on the back.</li>
-                    <li>The reset button is next to the port labeled 'WAN' and must be held for 30 seconds.</li>
-                    <li>It may take 10–15 minutes to reconnect after resetting.</li>
-                </ul>
-                <hr />
-                <h3>E3000 – Troubleshooting</h3>
+                    <hr />
+                    <ul>
+                        <li>If no online indicator lights are visible, verify that the power brick is plugged into a working outlet and the power switch near port '1' is on.</li>
+                        <li>Wait 5–10 minutes for the router to reconnect.</li>
+                        <li>If it takes longer than 10 minutes, perform a reset using a paperclip or similar object to press the button on the back.</li>
+                        <li>The reset button is next to the port labeled 'WAN' and must be held for 30 seconds.</li>
+                        <li>It may take 10–15 minutes to reconnect after resetting.</li>
+                    </ul>
+                    <hr />
+                    <h3>E3000 – Troubleshooting</h3>
 
-                <p>Status Check: The router is working correctly when you see:</p>
-                <ul>
-                    <li>7 Green Lights</li>
-                    <li>2 – Blue Lights</li>
-                </ul>
+                    <p>Status Check: The router is working correctly when you see:</p>
+                    <ul>
+                        <li>7 Green Lights</li>
+                        <li>2 – Blue Lights</li>
+                    </ul>
 
-                <p>
-                    If the router displays incorrect lights, or if the manager’s office computer or the Oracle TSR system shows no internet connection, call <b><u>770-729-5933</u></b> and select <b>option 3</b> for support.
-                </p>
+                    <p>
+                        If the router displays incorrect lights, or if the manager’s office computer or the Oracle TSR system shows no internet connection, call <b><u>770-729-5933</u></b> and select <b>option 3</b> for support.
+                    </p>
 
                 <div class="row mt-3">
                     <div class="col-sm-5">
-                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseE3000">
-                            View E3000 Image
-                        </button>
-                        <div id="collapseE3000" class="collapse mt-2">
+                        <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS3">View E3000 Image</button>
+                        <div id="UIS3" class="collapse mt-2">
                             <img src="@Url.Content("~/Images/E3000.png")"
                                  data-toggle="modal"
                                  data-target="#modalE3000"
-                                 class="img-responsive shadow img-thumbnail center-block"
+                                 class="img-responsive img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
-                        </div>
-                    </div>
-                    <div class="modal fade" id="modalE3000" tabindex="-1" role="dialog" aria-labelledby="modalLabelE3000" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/E3000.png")" class="img-fluid" alt="E3000" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <hr />
-                <p>
-                    If troubleshooting steps do not resolve the issue, please contact UIS tech support at <b><u>770-729-5933</u></b> and select <b>option 3</b>.
-                </p>
+                    <hr />
+                    <p>
+                        If troubleshooting steps do not resolve the issue, please contact UIS tech support at <b><u>770-729-5933</u></b> and select <b>option 3</b>.
+                    </p>
+                </div>
             </div>
-        </div>
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse11">ATA-Phone Modem </a>
-        </h4>
-    </div>
-    <div id="Ucollapse11" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>ATA-Phone Modem Troubleshooting:</h4>
-            <p>Ensure that the large cradle point router is powered on and is connected to the internet. To know that the router is connected to the internet. Depending on the model router that you have:</p>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <b>AER1600:</b>
-                        <ul>
-                            <li>Three Green</li>
-                            <li>Four Blue</li>
-                        </ul>
-                    </div>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse11">ATA-Phone Modem </a>
+                </h4>
+            </div>
+            <div id="Ucollapse11" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>ATA-Phone Modem Troubleshooting:</h4>
+                    <p>Ensure that the large cradle point router is powered on and is connected to the internet. To know that the router is connected to the internet. Depending on the model router that you have:</p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <b>AER1600:</b>
+                            <ul>
+                                <li>Three Green</li>
+                                <li>Four Blue</li>
+                            </ul>
+                        </div>
 
                     <div class="col-sm-5">
-                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseAER1600UIS4">
-                            1. AER1600
-                        </button>
-                        <div id="collapseAER1600UIS4" class="collapse mt-2">
+                        <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS4">1. AER1600</button>
+                        <div id="UIS4" class="collapse">
                             <img src="@Url.Content("~/Images/AER1600.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalAER1600UIS4"
-                                 class="img-responsive shadow img-thumbnail center-block"
+                                 class="img-responsive img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
-                        </div>
-
-                        <div class="modal fade" id="modalAER1600UIS4" tabindex="-1" role="dialog" aria-labelledby="modalLabelAER1600UIS4" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body text-center">
-                                        <img src="@Url.Content("~/Images/AER1600.jpg")" class="img-fluid" alt="AER1600" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-sm-3">
-                        <b>E300:</b>
-                        <ul>
-                            <li>Three Green</li>
-                            <li>Four Blue</li>
-                        </ul>
-                    </div>
+                    <div class="row mt-4">
+                        <div class="col-sm-3">
+                            <b>E300:</b>
+                            <ul>
+                                <li>Three Green</li>
+                                <li>Four Blue</li>
+                            </ul>
+                        </div>
 
                     <div class="col-sm-5">
                         <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS5">2. E300 ONLINE</button>
@@ -200,17 +165,8 @@
                             <img src="@Url.Content("~/Images/E300.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalE300UIS4"
-                                 class="img-responsive shadow img-thumbnail center-block"
+                                 class="img-responsive img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
-                        </div>
-                        <div class="modal fade" id="modalE300UIS4" tabindex="-1" role="dialog" aria-labelledby="modalLabelE300UIS4" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body text-center">
-                                        <img src="@Url.Content("~/Images/E300.jpg")" class="img-fluid" alt="E300" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,79 +218,73 @@
                             <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")"
                             data-toggle="modal"
                             data-target="#modalRouterDiagram4"
-                            class="img-responsive shadow img-thumbnail center-block"
+                            class="img-responsive img-thumbnail center-block"
                             style="max-width: 100%; height: auto;" />
                         </div>
-                            <div class="modal fade" id="modalRouterDiagram4" tabindex="-1" role="dialog" aria-labelledby="modalLabelRouterDiagram4" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body text-center">
-                                            <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")" class="img-fluid" alt="PhoneRouterDiagram" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
 
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse1">ZOTAC BIOS Screen</a>
-        </h4>
-    </div>
-    <div id="Ucollapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Stuck on ZOTAC BIOS screen</h4>
-            <ol>
-                <li>You're going to use your keyboard arrow keys to navigate this BIOS screen</li>
-                <img src="@Url.Content("~/Images/uis_keyboard_arrow.png")" alt="image shows arrow keys" class="center" />
-                <li>You're going to use your right arrow key to go over to the "Boot" tab</li>
-                <li>Use the down arrow key to "Boot Mode."</li>
-                <li>Once you're on the "Boot Mode" tab, press the "Enter" key and use your up-arrow key to go to "Legacy Only" and press the "Enter" key again</li>
-                <li>Press the "F10" key, and a save and exit prompt will appear. Press the "Enter" key, and the computer will restart and boot up into UIS.</li>
-                <li>If the save prompt doesn't appear after pressing F10. Please repeat steps 4 & 5.</li>
-                <li>If you go through these steps, the computer goes to a blue recovery screen or won't come out of the BIOS screen,<br>Please give UIS a call at <u><b>770-729-5933</b></u> and select <b>option 3</b> </li>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse1">ZOTAC BIOS Screen</a>
+                </h4>
+            </div>
+            <div id="Ucollapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Stuck on ZOTAC BIOS screen</h4>
+                    <ol>
+                        <li>You're going to use your keyboard arrow keys to navigate this BIOS screen</li>
+                        <img src="@Url.Content("~/Images/uis_keyboard_arrow.png")" alt="image shows arrow keys" class="center" />
+                        <li>You're going to use your right arrow key to go over to the "Boot" tab</li>
+                        <li>Use the down arrow key to "Boot Mode."</li>
+                        <li>Once you're on the "Boot Mode" tab, press the "Enter" key and use your up-arrow key to go to "Legacy Only" and press the "Enter" key again</li>
+                        <li>Press the "F10" key, and a save and exit prompt will appear. Press the "Enter" key, and the computer will restart and boot up into UIS.</li>
+                        <li>If the save prompt doesn't appear after pressing F10. Please repeat steps 4 & 5.</li>
+                        <li>If you go through these steps, the computer goes to a blue recovery screen or won't come out of the BIOS screen,<br>Please give UIS a call at <u><b>770-729-5933</b></u> and select <b>option 3</b> </li>
+                    </ol>
+
+                </div>
+            </div>
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse7">Mirroring Screens (Windows 10)</a>
+                </h4>
+            </div>
+            <div id="Ucollapse7" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>The office monitor and the time clock monitor are showing the same screen.</h4>
+                    <ul>
+                        <li>Press and hold the Windows logo key <img src="@Url.Content("~/Images/uis_keyboard_win.png")" width="24" height="24" alt="Home Button: resembles a house" /> and the letter 'P' key</li>
+
+                        @Html.Partial("_keyboard")
+
+
+                        <li>A "Project" option menu will appear on the office monitor with the mouse click on "Extend."</li>
+
+                        @Html.Partial("_TC_Mirror")
+
+
+                        <li>Once you've extended your screen. Minimize the UIS system application. </li>
+                        @Html.Partial("_Minimizeuis")
+                        <li>Look for the desktop icon labeled "Set Screen Size to 1024." This will set the screen resolution for the time clock and the office monitor. </li>
+                        <img src="@Url.Content("~/Images/setScreenSize.png")" class="center" alt="image shows an icon labeled set screen size to 1024 with the image of two gears">
+                        <li>The time clock should now show on the time clock monitor.</li>
+                    </ul>
+                    <span>For older model computers, please call UIS support at 770-729-5933 or email uis@wafflehouse.com </span>
+
+                </div>
+            </div>
+
+            @Html.Partial("_PowerVar")
+
             </ol>
-
-        </div>
-    </div>
-
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse7">Mirroring Screens (Windows 10)</a>
-        </h4>
-    </div>
-    <div id="Ucollapse7" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>The office monitor and the time clock monitor are showing the same screen.</h4>
-            <ul>
-                <li>Press and hold the Windows logo key <img src="@Url.Content("~/Images/uis_keyboard_win.png")" width="24" height="24" alt="Home Button: resembles a house" /> and the letter 'P' key</li>
-
-                    @Html.Partial("_keyboard")
-
-
-                <li>A "Project" option menu will appear on the office monitor with the mouse click on "Extend."</li>
-
-                    @Html.Partial("_TC_Mirror")
-
-
-                <li>Once you've extended your screen. Minimize the UIS system application. </li>
-                @Html.Partial("_Minimizeuis")
-                <li>Look for the desktop icon labeled "Set Screen Size to 1024." This will set the screen resolution for the time clock and the office monitor. </li>
-                <img src="@Url.Content("~/Images/setScreenSize.png")" class="center" alt="image shows an icon labeled set screen size to 1024 with the image of two gears">
-                <li>The time clock should now show on the time clock monitor.</li>
-            </ul>
-            <span>For older model computers, please call UIS support at 770-729-5933 or email uis@wafflehouse.com </span>
-
-        </div>
-    </div>
-
-    @Html.Partial("_PowerVar")
-
-    </ol>
 
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -348,21 +298,29 @@
                     <li>1. Use your computer mouse to click on the office monitor's blue background.</li>
                     <li>On the keyboard in the office, press and hold the following keyboard keys for 10 seconds: CTRL key, ALT key, and the Up arrow key (&#8679) </li>
                     
-                    <div class="KCAU-container">
-                        @Html.Partial("_KeyboardCtrlAltUp")
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#keyboardCommand">Show image</button>
+                    <div id="keyboardCommand" class="collapse">
+                        <div class="row">
+                            <img src="@Url.Content("~/Images/uis_keyboard_ctrlAltUp.png")"
+                            class="img-responsive"
+                            style="max-width: 500px; height: auto;"
+                            alt="keyboardCommand Shortcut"
+                            data-toggle="modal"
+                            data-target="#keyboardCommand">
+                        </div>
                     </div>
 
 
-                    <li>All three of the keys need to be held down at the same time.</li>
-                    <li>After 10 seconds, the monitor screen should rotate correctly.</li>
-                    <li>Follow steps 1-3 if the time clock doesn't change rotations after the first try. </li>
-                    <li>Call <u><b>770-729-5933</b></u> and select <b>option 1</b> to have the screen rotation corrected. </li>
-                </ol>
-                <span>For older model computers, please call UIS support at 770-729-5933 or email uis@wafflehouse.com </span>
+                        <li>All three of the keys need to be held down at the same time.</li>
+                        <li>After 10 seconds, the monitor screen should rotate correctly.</li>
+                        <li>Follow steps 1-3 if the time clock doesn't change rotations after the first try. </li>
+                        <li>Call <u><b>770-729-5933</b></u> and select <b>option 1</b> to have the screen rotation corrected. </li>
+                    </ol>
+                    <span>For older model computers, please call UIS support at 770-729-5933 or email uis@wafflehouse.com </span>
 
 
+                </div>
             </div>
-        </div>
 
 
     <div class="panel-heading">
@@ -385,8 +343,8 @@
                                 <img src="@Url.Content("~/Images/printerBack.jpg")"
                                      data-toggle="modal"
                                      data-target="#modalPrinterback"
-                                     class="img-responsive shadow img-thumbnail center-block"
-                                     style="max-width: 100%; height: auto;" />
+                                     class="img-responsive img-thumbnail center-block"
+                                     style="max-width: 100%; height: auto;" />>
                             </div>
                         </div>
 
@@ -408,9 +366,8 @@
                                 <img src="@Url.Content("~/Images/printerCable.png")"
                                      data-toggle="modal"
                                      data-target="#modalprinterCable"
-                                     class="img-responsive shadow img-thumbnail center-block"
+                                     class="img-responsive img-thumbnail center-block"
                                      style="max-width: 100%; height: auto;" />
-                                     <br/>
                                 <p class="mt-2">Note: It does not matter which USB port the printer is plugged into in the back of the computer.</p>
                             </div>
                         </div>
@@ -430,11 +387,10 @@
                             </button>
                             <div id="collapseUSBAtoB" class="collapse mt-2">
                                 <img src="@Url.Content("~/Images/USBAtoB.png")"
-                                data-toggle="modal"
-                                data-target="#modalUSBAtoB"
-                                class="img-responsive shadow img-thumbnail center-block"
-                                style="max-width: 100%; height: auto;" />
-                                <br />
+                                     data-toggle="modal"
+                                     data-target="#modalUSBAtoB"
+                                     class="img-responsive img-thumbnail center-block"
+                                     style="max-width: 100%; height: auto;" />
                                 <p class="mt-2">This is what the cable should look like.</p>
                             </div>
                         </div>
@@ -454,52 +410,49 @@
             </ul>
 
 
-        </div>
-    </div>
-    <!--<div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse10">CCTV</a>
-        </h4>
-    </div>-->
-    <div id="Ucollapse10" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>CCTV</h4>
-            <ul>
-                <li>Please call <u><b>770-729-5933</b></u> and ask for a transfer to the Security department for further assistance. That department is available from Monday to Friday, 8 AM to 5 PM Eastern Standard Time.  </li>
-                <li>The Security department will be able to assist with anything about the CCTV system in the unit. </li>
-            </ul>
-        </div>
-    </div>
+                </div>
+            </div>
+            <!--<div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse10">CCTV</a>
+                </h4>
+            </div>-->
+            <div id="Ucollapse10" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>CCTV</h4>
+                    <ul>
+                        <li>Please call <u><b>770-729-5933</b></u> and ask for a transfer to the Security department for further assistance. That department is available from Monday to Friday, 8 AM to 5 PM Eastern Standard Time.  </li>
+                        <li>The Security department will be able to assist with anything about the CCTV system in the unit. </li>
+                    </ul>
+                </div>
+            </div>
 
 
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse3">Commissary Inventory Worksheet/Floor Count</a>
-        </h4>
-    </div>
-    <div id="Ucollapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Commissary Inventory Worksheet/Floor Count</h4>
-            <p>
-                Please send an enail to <a href="mailto:uis@wafflehouse.com">uis@wafflehouse.com</a> with the following:
-                <ul>
-                    <li>Unit number and the commissary inventory worksheet with items you want to remove highlighted or circled.</li>
-                    Example:
-                </ul>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse3">Commissary Inventory Worksheet/Floor Count</a>
+                </h4>
+            </div>
+            <div id="Ucollapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Commissary Inventory Worksheet/Floor Count</h4>
+                    <p>
+                        Please send an enail to <a href="mailto:uis@wafflehouse.com">uis@wafflehouse.com</a> with the following:
+                        <ul>
+                            <li>Unit number and the commissary inventory worksheet with items you want to remove highlighted or circled.</li>
+                            Example:
+                        </ul>
 
-                    <div class="col-sm-6 offset-sm-3">
-                        <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#collapseFloorCount1">
+                            Show Image 1
+                        </button>
+                        <div id="collapseFloorCount1" class="collapse mt-2">
                             <img src="@Url.Content("~/Images/FloorCount1.png")"
                                  data-toggle="modal"
                                  data-target="#modalFloorCount1"
-                                 class="img-responsive shadow img-thumbnail center-block"
+                                 class="img-responsive img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
-                            <img src="@Url.Content("~/Images/FloorCount2.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalFloorCount2"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 100%; height: auto;" />
-                        </div>
                         </div>
                     </div>
                     <div class="modal fade" id="modalFloorCount1" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount1" aria-hidden="true">
@@ -508,25 +461,40 @@
                                 <div class="modal-body text-center">
                                     <img src="@Url.Content("~/Images/FloorCount1.png")" class="img-fluid" alt="FloorCount1" />
                                 </div>
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="modalFloorCount2" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount2" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/FloorCount1.png")" class="img-fluid" alt="FloorCount1" />
-                                </div>
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
+                    <div class="col-sm-3">
+                            <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#collapseFloorCount2">
+                            Show Image 2
+                        </button>
+                        <div id="collapseFloorCount2" class="collapse mt-2;">
+                            <div class="w-100">
+                                <img src="@Url.Content("~/Images/FloorCount2.png")"
+                                     data-toggle="modal"
+                                     data-target="#modalFloorCount2"
+                                     class="img-responsive img-thumbnail center-block"
+                                     style="max-width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalFloorCount2" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount2" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        
+
+                        </div>
+                </div>
+
+
+
         </div>
+    </div>
 
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -545,95 +513,95 @@
                 <li>Invoice type</li>
             </ul>
 
-        </div>
-    </div>
+                </div>
+            </div>
 
-    <!--<div class="panel-heading">
-        <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse5">Form 4</a>
-        </h4>
-    </div>
-    <div id="Ucollapse5" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Form 4</h4>
-            <p>Sales and Register - Option in UIS</p>
-            <ul>
-                <li>Call the front desk at<u><b> 770-729-5700</b></u> and ask for a transfer to the Area Administrators/OSS.</li>
-                <li>You will only need to call UIS technical support if an error message like the image below appears:</li>
-                <image src="photos/thumbnail/Form4Err.png" alt="Text in image reads 'YOUR COMPUTER JUST HAD A PROGRAM OR FILE ERROR!
-                PLEASE, CALL THE HELP DESK AT THE CORPERATE OFFICE!
-                THE PHONE NUMBER SHOULD BE ON A LABEL ON THE COMPUTER.'
-                " class="center" >
+            <!--<div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse5">Form 4</a>
+                </h4>
+            </div>
+            <div id="Ucollapse5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Form 4</h4>
+                    <p>Sales and Register - Option in UIS</p>
+                    <ul>
+                        <li>Call the front desk at<u><b> 770-729-5700</b></u> and ask for a transfer to the Area Administrators/OSS.</li>
+                        <li>You will only need to call UIS technical support if an error message like the image below appears:</li>
+                        <image src="photos/thumbnail/Form4Err.png" alt="Text in image reads 'YOUR COMPUTER JUST HAD A PROGRAM OR FILE ERROR!
+                        PLEASE, CALL THE HELP DESK AT THE CORPERATE OFFICE!
+                        THE PHONE NUMBER SHOULD BE ON A LABEL ON THE COMPUTER.'
+                        " class="center" >
 
-                <b>THIS IS JUST AN EXAMPLE OF THE PROGRAM OR FILE ERROR YOU MIGHT RECEIVE</b>
-                <!--<li>Aditional information can be found at <a href="file://c:\uis"target="_blank">c:\uis\uis.exel</a>--
-            </ul>
-        </div>
-    </div>-->
-    <!--<div class="panel-heading">
-        <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse5b">Cash Paid Outs on Level Pricing</a>
-        </h4>
-    </div>
-    <div id="Ucollapse5b" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Level Pricing</h4>
-            <p>Level Pricing</p>
-            <ul>
-                <li>Call the front desk at 770-729-5700 and ask for a transfer to US Foods Accounting. Suppose you speak with the Purchasing department. Ask them to transfer you to US Foods Accounting.</li>
-                <li>You will only need to call UIS technical support if the error message is like the image below, or you cannot select 'Cash Paid Outs & Refunds' in the Sales & Cost tab's Inventory Menu.</li>
-                <image src="photos/thumbnail/Form4Err.png" alt="Text in image reads 'YOUR COMPUTER JUST HAD A PROGRAM OR FILE ERROR!
-                PLEASE, CALL THE HELP DESK AT THE CORPERATE OFFICE!
-                THE PHONE NUMBER SHOULD BE ON A LABEL ON THE COMPUTER.'
-                " class="center" >
+                        <b>THIS IS JUST AN EXAMPLE OF THE PROGRAM OR FILE ERROR YOU MIGHT RECEIVE</b>
+                        <!--<li>Aditional information can be found at <a href="file://c:\uis"target="_blank">c:\uis\uis.exel</a>--
+                    </ul>
+                </div>
+            </div>-->
+            <!--<div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse5b">Cash Paid Outs on Level Pricing</a>
+                </h4>
+            </div>
+            <div id="Ucollapse5b" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Level Pricing</h4>
+                    <p>Level Pricing</p>
+                    <ul>
+                        <li>Call the front desk at 770-729-5700 and ask for a transfer to US Foods Accounting. Suppose you speak with the Purchasing department. Ask them to transfer you to US Foods Accounting.</li>
+                        <li>You will only need to call UIS technical support if the error message is like the image below, or you cannot select 'Cash Paid Outs & Refunds' in the Sales & Cost tab's Inventory Menu.</li>
+                        <image src="photos/thumbnail/Form4Err.png" alt="Text in image reads 'YOUR COMPUTER JUST HAD A PROGRAM OR FILE ERROR!
+                        PLEASE, CALL THE HELP DESK AT THE CORPERATE OFFICE!
+                        THE PHONE NUMBER SHOULD BE ON A LABEL ON THE COMPUTER.'
+                        " class="center" >
 
-                <b>THIS IS JUST AN EXAMPLE OF THE PROGRAM OR FILE ERROR YOU MIGHT RECEIVE</b>
-            </ul>
-        </div>
-    </div>-->
-    <!--<div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse6">Modify Change Fund</a>
-        </h4>
-    </div>-->
-    <!--
-    <div id="Ucollapse6" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Modify Change Fund</h4>
-            <p>please email <a href="mailto:ossteam@wafflehouse.com ">ossteam@wafflehouse.com </a> with the following:</p>
-            <ul>
-                <li>Subject: Modify Change Fund (or something to that effect)</li>
-                <li>Unit Number</li>
-                <li>New change fund amount</li>
-            </ul>
-            <span>Note: UIS cannot help with this.  You may be transfered if you call the UIS help line for assistance with modifying your change fund.</span>
-        </div>
-    </div>
-    -->
-    <!--<div class="panel-heading">
-        <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accUIS" href="#UcollapsePho">Change Phone Recording</a>
-        </h4>
-    </div>-->
-    <div id="UcollapsePho" class="panel-collapse collapse">
-        <div class="panel-body">
-            <h4>Change Phone Recording</h4>
-            <p>How to update the phone recording:</p>
-            <ol>
-                <li>Go to Ops Express and select Unit Operations/Online Scheduling:</li>
-                <a><img src="@Url.Content("~/Images/PhoneMessUp1.png")" data-toggle="modal" data-target="#RegRouterTh" class=""></a>
-                <li>Select the unit you’ll need to change the phone recording for</li>
-                <img src="@Url.Content("~/Images/PhoneMessUp2.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
-                <li>Select Unit Phone Recording:</li>
-                <img src="@Url.Content("photos/PhoneMessUp3.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
-                <li>
-                    Select the recording you would like.<br />
-                    Once you have selected the recording you like select “Update Recording,” and it will automatically update the recording for the phone system.
-                </li>
-            </ol>
+                        <b>THIS IS JUST AN EXAMPLE OF THE PROGRAM OR FILE ERROR YOU MIGHT RECEIVE</b>
+                    </ul>
+                </div>
+            </div>-->
+            <!--<div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accUIS" href="#Ucollapse6">Modify Change Fund</a>
+                </h4>
+            </div>-->
+            <!--
+            <div id="Ucollapse6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Modify Change Fund</h4>
+                    <p>please email <a href="mailto:ossteam@wafflehouse.com ">ossteam@wafflehouse.com </a> with the following:</p>
+                    <ul>
+                        <li>Subject: Modify Change Fund (or something to that effect)</li>
+                        <li>Unit Number</li>
+                        <li>New change fund amount</li>
+                    </ul>
+                    <span>Note: UIS cannot help with this.  You may be transfered if you call the UIS help line for assistance with modifying your change fund.</span>
+                </div>
+            </div>
+            -->
+            <!--<div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accUIS" href="#UcollapsePho">Change Phone Recording</a>
+                </h4>
+            </div>-->
+            <div id="UcollapsePho" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Change Phone Recording</h4>
+                    <p>How to update the phone recording:</p>
+                    <ol>
+                        <li>Go to Ops Express and select Unit Operations/Online Scheduling:</li>
+                        <a><img src="@Url.Content("~/Images/PhoneMessUp1.png")" data-toggle="modal" data-target="#RegRouterTh" class=""></a>
+                        <li>Select the unit you’ll need to change the phone recording for</li>
+                        <img src="@Url.Content("~/Images/PhoneMessUp2.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
+                        <li>Select Unit Phone Recording:</li>
+                        <img src="@Url.Content("photos/PhoneMessUp3.png")" data-toggle="modal" data-target="#RegRouterTh" class="">
+                        <li>
+                            Select the recording you would like.<br />
+                            Once you have selected the recording you like select “Update Recording,” and it will automatically update the recording for the phone system.
+                        </li>
+                    </ol>
 
-        </div>
-    </div>
+                </div>
+            </div>
 
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -644,120 +612,57 @@
         <div class="panel-body">
             <h4>Creating a Security Incident Report </h4>
             <ol>
-                    <li>Log into the UIS system</li>
-                    <li>Go to the Sales and Costs Menu and Press the “Enter” key on the Sales and Bank Menu Option</li>
-
-                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport1Collapse">Show Images</button>
-                    <div id="securityreport1Collapse" class="collapse">
-                        <div class="row">
-                            <img src="@Url.Content("~/Images/securityreport1.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalsecurityreport1"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 500px; width: 100%; height: auto;" />
-                        </div>
+                <li>Log into the UIS system</li>
+                <li>Go to the Sales and Costs Menu and Press the “Enter” key on the Sales and Bank Menu Option</li>
+                <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport1">Show Images</button>
+                <div id="securityreport1" class="collapse">
+                    <div class="row">
+                        <img src="@Url.Content("~/Images/securityreport1.png")" data-toggle="modal" data-target="#securityreport1" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
                     </div>
-                    <div class="modal fade" id="modalsecurityreport1" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport1" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/securityreport1.png")" class="img-fluid" alt="securityreport1" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
                 <li>Select a Form 4 date</li>
                 <li>Press Enter on a Form 4 date, so the drop-down menu appears. Once the drop-down menu appears, go to “Security Events.”</li>
-                    <button data-toggle="collapse" class="btn btn-primary mb-3" data-target="#securityreport2Collapse">Show Images</button>
-                    <div id="securityreport2Collapse" class="collapse">
-                        <div class="row">
-                            <img src="@Url.Content("~/Images/securityreport2.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalsecurityreport2"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 500px; width: 100%; height: auto;" />
-                        </div>
-                    </div>
-
-                    <br />
-
-                    <div class="modal fade" id="modalsecurityreport2" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport2" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/securityreport2.png")" class="img-fluid" alt="securityreport2" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button data-toggle="collapse" class="btn btn-primary" data-target="#report2">Show Image 1</button>
+                            <div id="report2" class="collapse">
+                                <div class="text-center">
+                                    <img src="@Url.Content("~/Images/securityreport2.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br/>
 
-                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport3Collapse">Show Images</button>
-                    <div id="securityreport3Collapse" class="collapse">
-                        <div class="row">
-                            <img src="@Url.Content("~/Images/securityreport3.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalsecurityreport3"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 500px; width: 100%; height: auto;" />
-                        </div>
-                    </div>
-                    <div class="modal fade" id="modalsecurityreport3" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport3" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/securityreport3.png")" class="img-fluid" alt="securityreport3" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button data-toggle="collapse" class="btn btn-primary" data-target="#report3">Show Image 2</button>
+                            <div id="report3" class="collapse">
+                                <div class="text-center">
+                                    <img src="@Url.Content("~/Images/securityreport3.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 <li>To create a security incident, select “Add New Security Event.” (You can also view past reported security incidents in this menu.)</li>
-                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport4Collapse">Show Images</button>
-                    <div id="securityreport4Collapse" class="collapse">
-                        <div class="row">
-                            <img src="@Url.Content("~/Images/securityreport4.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalsecurityreport4"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 500px; width: 100%; height: auto;" />
-                        </div>
+                <button data-toggle="collapse" class="btn btn-primary" data-target="#report4">Show Images</button>
+                <div id="report4" class="collapse">
+                    <div class="row">
+                        <img src="@Url.Content("~/Images/securityreport4.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
                     </div>
-                    <div class="modal fade" id="modalsecurityreport4" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport4" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/securityreport4.png")" class="img-fluid" alt="securityreport4" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
                 <li>Once you select “Add New Security Event” a page will open for you to input information about the security incident that had occurred on that Form 4 day.</li>
-                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport5Collapse">Show Images</button>
-                    <div id="securityreport5Collapse" class="collapse">
-                        <div class="row">
-                            <img src="@Url.Content("~/Images/securityreport5.png")"
-                                 data-toggle="modal"
-                                 data-target="#modalsecurityreport5"
-                                 class="img-responsive shadow img-thumbnail center-block"
-                                 style="max-width: 500px; width: 100%; height: auto;" />
-                        </div>
+                <button data-toggle="collapse" class="btn btn-primary" data-target="#report5">Show Images</button>
+                <div id="report5" class="collapse">
+                    <div class="row">
+                        <img src="@Url.Content("~/Images/securityreport5.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
                     </div>
-                    <div class="modal fade" id="modalsecurityreport5" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport5" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body text-center">
-                                    <img src="@Url.Content("~/Images/securityreport5.png")" class="img-fluid" alt="securityreport5" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
 
-            </ol>
+                    </ol>
 
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
