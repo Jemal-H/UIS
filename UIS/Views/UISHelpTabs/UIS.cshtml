@@ -44,7 +44,7 @@
                             <img src="@Url.Content("~/Images/AER1600.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalAER1600"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                             <img src="@Url.Content("~/Images/E300.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalE300"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                             <img src="@Url.Content("~/Images/E3000.png")"
                                  data-toggle="modal"
                                  data-target="#modalE3000"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                             <img src="@Url.Content("~/Images/AER1600.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalAER1600UIS4"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
                         </div>
 
@@ -200,7 +200,7 @@
                             <img src="@Url.Content("~/Images/E300.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalE300UIS4"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
                         </div>
                         <div class="modal fade" id="modalE300UIS4" tabindex="-1" role="dialog" aria-labelledby="modalLabelE300UIS4" aria-hidden="true">
@@ -262,7 +262,7 @@
                             <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")"
                             data-toggle="modal"
                             data-target="#modalRouterDiagram4"
-                            class="img-responsive img-thumbnail center-block"
+                            class="img-responsive shadow img-thumbnail center-block"
                             style="max-width: 100%; height: auto;" />
                         </div>
                             <div class="modal fade" id="modalRouterDiagram4" tabindex="-1" role="dialog" aria-labelledby="modalLabelRouterDiagram4" aria-hidden="true">
@@ -385,8 +385,8 @@
                                 <img src="@Url.Content("~/Images/printerBack.jpg")"
                                      data-toggle="modal"
                                      data-target="#modalPrinterback"
-                                     class="img-responsive img-thumbnail center-block"
-                                     style="max-width: 100%; height: auto;" />>
+                                     class="img-responsive shadow img-thumbnail center-block"
+                                     style="max-width: 100%; height: auto;" />
                             </div>
                         </div>
 
@@ -408,8 +408,9 @@
                                 <img src="@Url.Content("~/Images/printerCable.png")"
                                      data-toggle="modal"
                                      data-target="#modalprinterCable"
-                                     class="img-responsive img-thumbnail center-block"
+                                     class="img-responsive shadow img-thumbnail center-block"
                                      style="max-width: 100%; height: auto;" />
+                                     <br/>
                                 <p class="mt-2">Note: It does not matter which USB port the printer is plugged into in the back of the computer.</p>
                             </div>
                         </div>
@@ -429,10 +430,11 @@
                             </button>
                             <div id="collapseUSBAtoB" class="collapse mt-2">
                                 <img src="@Url.Content("~/Images/USBAtoB.png")"
-                                     data-toggle="modal"
-                                     data-target="#modalUSBAtoB"
-                                     class="img-responsive img-thumbnail center-block"
-                                     style="max-width: 100%; height: auto;" />
+                                data-toggle="modal"
+                                data-target="#modalUSBAtoB"
+                                class="img-responsive shadow img-thumbnail center-block"
+                                style="max-width: 100%; height: auto;" />
+                                <br />
                                 <p class="mt-2">This is what the cable should look like.</p>
                             </div>
                         </div>
@@ -485,16 +487,19 @@
                     Example:
                 </ul>
 
-                    <div class="col-sm-6">
-                        <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#collapseFloorCount1">
-                            Show Image 1
-                        </button>
-                        <div id="collapseFloorCount1" class="collapse mt-2">
+                    <div class="col-sm-6 offset-sm-3">
+                        <div class="row">
                             <img src="@Url.Content("~/Images/FloorCount1.png")"
                                  data-toggle="modal"
                                  data-target="#modalFloorCount1"
-                                 class="img-responsive img-thumbnail center-block"
+                                 class="img-responsive shadow img-thumbnail center-block"
                                  style="max-width: 100%; height: auto;" />
+                            <img src="@Url.Content("~/Images/FloorCount2.png")"
+                                 data-toggle="modal"
+                                 data-target="#modalFloorCount2"
+                                 class="img-responsive shadow img-thumbnail center-block"
+                                 style="max-width: 100%; height: auto;" />
+                        </div>
                         </div>
                     </div>
                     <div class="modal fade" id="modalFloorCount1" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount1" aria-hidden="true">
@@ -503,40 +508,25 @@
                                 <div class="modal-body text-center">
                                     <img src="@Url.Content("~/Images/FloorCount1.png")" class="img-fluid" alt="FloorCount1" />
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                            <button class="btn btn-sm btn-primary btn-block" data-toggle="collapse" data-target="#collapseFloorCount2">
-                            Show Image 2
-                        </button>
-                        <div id="collapseFloorCount2" class="collapse mt-2;">
-                            <div class="w-100">
-                                <img src="@Url.Content("~/Images/FloorCount2.png")"
-                                     data-toggle="modal"
-                                     data-target="#modalFloorCount2"
-                                     class="img-responsive img-thumbnail center-block"
-                                     style="max-width: 100%; height: auto;" />
-                            </div>
-                        </div>
-                        <div class="modal fade" id="modalFloorCount2" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount2" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body text-center">
-                                        <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
-                                    </div>
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
                                 </div>
                             </div>
                         </div>
-                        
-
+                    </div>
+                    <div class="modal fade" id="modalFloorCount2" tabindex="-1" role="dialog" aria-labelledby="modalLabelFloorCount2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/FloorCount1.png")" class="img-fluid" alt="FloorCount1" />
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/FloorCount2.png")" class="img-fluid" alt="FloorCount2" />
+                                </div>
+                            </div>
                         </div>
-                </div>
-
-
-
+                    </div>
         </div>
-    </div>
 
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -654,22 +644,45 @@
         <div class="panel-body">
             <h4>Creating a Security Incident Report </h4>
             <ol>
-                <li>Log into the UIS system</li>
-                <li>Go to the Sales and Costs Menu and Press the “Enter” key on the Sales and Bank Menu Option</li>
-                <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport1">Show Images</button>
-                <div id="securityreport1" class="collapse">
-                    <div class="row">
-                        <img src="@Url.Content("~/Images/securityreport1.png")" data-toggle="modal" data-target="#securityreport1" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
+                    <li>Log into the UIS system</li>
+                    <li>Go to the Sales and Costs Menu and Press the “Enter” key on the Sales and Bank Menu Option</li>
+
+                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport1Collapse">Show Images</button>
+                    <div id="securityreport1Collapse" class="collapse">
+                        <div class="row">
+                            <img src="@Url.Content("~/Images/securityreport1.png")"
+                                 data-toggle="modal"
+                                 data-target="#modalsecurityreport1"
+                                 class="img-responsive shadow img-thumbnail center-block"
+                                 style="max-width: 500px; width:auto; height: auto;" />
+                        </div>
                     </div>
-                </div>
+                    <div class="modal fade" id="modalsecurityreport1" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/securityreport1.png")" class="img-fluid" alt="securityreport1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <li>Select a Form 4 date</li>
                 <li>Press Enter on a Form 4 date, so the drop-down menu appears. Once the drop-down menu appears, go to “Security Events.”</li>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button data-toggle="collapse" class="btn btn-primary" data-target="#report2">Show Image 1</button>
-                            <div id="report2" class="collapse">
-                                <div class="text-center">
-                                    <img src="@Url.Content("~/Images/securityreport2.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
+                    <button data-toggle="collapse" class="btn btn-primary" data-target="#securityreport2Collapse">Show Images</button>
+                    <div id="securityreport2Collapse" class="collapse">
+                        <div class="row">
+                            <img src="@Url.Content("~/Images/securityreport2.png")"
+                                 data-toggle="modal"
+                                 data-target="#modalsecurityreport2"
+                                 class="img-responsive shadow img-thumbnail center-block"
+                                 style="max-width: 500px; width:auto; height: auto;" />
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modalsecurityreport2" tabindex="-1" role="dialog" aria-labelledby="modalLabelsecurityreport2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/securityreport2.png")" class="img-fluid" alt="securityreport2" />
                                 </div>
                             </div>
                         </div>
@@ -681,7 +694,7 @@
                             <button data-toggle="collapse" class="btn btn-primary" data-target="#report3">Show Image 2</button>
                             <div id="report3" class="collapse">
                                 <div class="text-center">
-                                    <img src="@Url.Content("~/Images/securityreport3.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
+                                    <img src="@Url.Content("~/Images/securityreport3.png")" class="img-responsive shadow img-thumbnail center-block" style="max-width: 450px; height: auto;">
                                 </div>
                             </div>
                         </div>
@@ -691,14 +704,14 @@
                 <button data-toggle="collapse" class="btn btn-primary" data-target="#report4">Show Images</button>
                 <div id="report4" class="collapse">
                     <div class="row">
-                        <img src="@Url.Content("~/Images/securityreport4.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
+                        <img src="@Url.Content("~/Images/securityreport4.png")" class="img-responsive shadow img-thumbnail center-block" style="max-width: 450px; height: auto;">
                     </div>
                 </div>
                 <li>Once you select “Add New Security Event” a page will open for you to input information about the security incident that had occurred on that Form 4 day.</li>
                 <button data-toggle="collapse" class="btn btn-primary" data-target="#report5">Show Images</button>
                 <div id="report5" class="collapse">
                     <div class="row">
-                        <img src="@Url.Content("~/Images/securityreport5.png")" class="img-responsive img-thumbnail center-block" style="max-width: 450px; height: auto;">
+                        <img src="@Url.Content("~/Images/securityreport5.png")" class="img-responsive shadow img-thumbnail center-block" style="max-width: 450px; height: auto;">
                     </div>
                 </div>
 
