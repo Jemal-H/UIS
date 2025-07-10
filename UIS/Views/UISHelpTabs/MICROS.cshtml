@@ -1307,12 +1307,12 @@
             </li>
 
             <div class="olo-image-group">
-                <div id="olo1" class="collapse">
+                        <div id="olo1" class="col-md-6 text-center">
                     <div class="row">
                         <img src="@Url.Content("~/Images/OLOEnabled.PNG")"
-                             class="img-responsive center-block"
-                             style="max-width: 300px; height: auto;"
-                             alt="UPSfExample"
+                             class="img-responsive img-thumbnail shadow center-block"
+                             style="max-width: 500px; width: 100%; height: auto;"
+                             alt="OloEnabled" 
                              data-toggle="modal"
                              data-target="#OloEnabledModal">
                     </div>
@@ -1328,12 +1328,12 @@
                     </div>
                 </div>
 
-                <div id="olo2" class="collapse">
+                <div id="olo2" class="col-md-6 text-center">
                     <div class="row">
                         <img src="@Url.Content("~/Images/OLODisabled.PNG")"
-                             class="img-responsive center-block"
-                             style="max-width: 300px; height: auto;"
-                             alt="UPSfExample"
+                             class="img-responsive img-thumbnail shadow center-block"
+                             style="max-width: 500px; width: 100%; height: auto;"
+                             alt="OLODisabled"
                              data-toggle="modal"
                              data-target="#OloDisabledModal">
                     </div>
@@ -1383,8 +1383,27 @@
                 <li>Select Online Dashboard</li>
             </ol>
             <li>Once you’re in the Online Dashboard – Tap on the Order ID</li>
-            <a><img src="@Url.Content("~/Images/OLORefund1.PNG") data-toggle="modal" data-target="#" class="full"></a>
-            <div class="row">
+                    <div id="OLO123" class="col-md-6 text-center">
+                        <div class="row">
+                            <img src="@Url.Content("~/Images/OLORefund1.PNG")"
+                                 class="img-responsive img-thumbnail shadow center-block"
+                                 style="max-width: 300px; width: 100%; height: auto;"
+                                 alt="UPSShipModalLabel" "
+                                 data-toggle="modal"
+                                 data-target="#OLORefund1">
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="OLORefund1" tabindex="-1" role="dialog" aria-labelledby="UPSShipModalELabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/OLORefund1.PNG")" class="img-fluid" alt="UPSShipModalEImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                 <div CLASS="col-sm-4"><br /><br />
             <li>Click the refund button</li>
     </div>
