@@ -11,7 +11,8 @@
 
 <p>Your issue probably fits into one of the category tabs at the top of the page: check said tab first.</p>
 <img src="@Url.Content("~/Images/navbar.png")" style="max-width:1000px; width:100%;" class="full">
-
+</br>
+</br>
 <p>
     Once in the tab related to your issue, click on the most related listed issue.
 </p>
@@ -19,9 +20,36 @@
 <br>
 <p>
     Some of these pages that contain several large images will have a button that reads "show images".  These buttons will reveal larger images that demonstrate what the text they appear next to visually.
-    This one does nothing and is provided as a sample.  <button class="btn btn-primary">Show Images</button>
+    This one does nothing and is provided as a sample.  
+    <button class="btn btn-primary">Show Images</button>
 </p>
+
+<br />
+
 <p>
-    If your issue does not appear in the first tab you check, it is recommended thatY you check the other tabs first.  The time clock and UIS may share some issues and all devices can be found in the "other" tab.
+    Click on a photo to expand it for a closer look. The image will enlarge and display in the screen.
+    To return to browsing the page, simply click anywhere in the gray area outside the enlarged image. This will close the englared image and allow you to access the page again. Try it with the image underneath!
+</p>
+
+    <img src="@Url.Content("~/Images/example.PNG")"
+         data-toggle="modal"
+         data-target="#modalexample4"
+         class="img-responsive shadow img-thumbnail center-block"
+         style="max-width: 400px; width:auto; height: auto;" />
+
+<div class="modal fade" id="modalexample4" tabindex="-1" role="dialog" aria-labelledby="modalLabelexample4" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="@Url.Content("~/Images/example.PNG")" class="img-fluid" alt="example" />
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+
+<p>
+    If your issue does not appear in the first tab you check, it is recommended that you check the other tabs first. The time clock and UIS may share some issues and all devices can be found in the "other" tab.
     Not all categorization issues will be as simple, so it is highly recommended you check every tab.
 </p>

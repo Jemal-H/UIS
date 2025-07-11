@@ -445,6 +445,8 @@
         <div id="MicCollapsepr" class="panel-collapse collapse">
             <div class="panel-body">
                 <h4>Printer not printing:</h4>
+                <div><img src="@Url.Content("~/Images/Picture1.png")" class="img-responsive" style="max-width: 425px; height: auto;"></div>
+                <br />
                 <ul>
                     <li>Ensure that the dip switches on the back of the printer are in the correct directions. The number (4) switch should be facing in the direction where you see the words 'DIP' and 'ON.' All of the other numbers should show in the direction away from 'DIP' and 'ON.'</li>
 
@@ -468,30 +470,30 @@
         </div>
         <div id="MicCollapseolox" class="panel-collapse collapse">
             <div class="panel-body">
-                <h4>Olo Health Check Offline or Olo only printing one ticket:</h4>
+                <h4>Ensure that the register is connected to the internet by navigating to Functions > WH Expo. The register is online, provided you can access the OLO screen. </h4>
 
-                <span> Troubleshooting steps are to be performed when the unit is slow. The unit must be cash-only when performing these steps. </span>
+                <span> Troubleshooting steps should be performed when the unit is running slowly. The unit must be cash-only when performing these steps.</span>
 
-                <span>The process takes 10-30 minutes.</span>
+                <span>The process takes 10-45 minutes. </span>
                 <0l>
-                    <li>Go to Functions</li>
-                    <li>Tap Sign out  </li>
-                    <li>Tap Open system functions </li>
+                    <li>Press functions and sign out. </li>
+                    <li>Click on the red box in the right-hand corner, select 'Update Database', press the red box again, and then select 'Reload'.</li>
+                    <li>Once that is complete, reboot the register screen by pressing the blue power button.</li>
                     <li>Sign in to PMC 9+4 digit unit number</li>
-                    <li>Tap Launch system functions </li>
-                    <li>Tap Update database </li>
-                    <li>Tap Reload database </li>
-                    <li>Tap Wait 30 seconds </li>
-                    <li>Reboot the Terminal</li>
+                    <li>Suppose the initial steps don't correct the issue. Please perform the following: </li>
+                    <li>Press functions and sign out.  </li>
+                    <li>Click on System Functions in the top left-hand corner, the passcode is 9 + four-digit unit number (ex: 90177 *for units with three-digits* or 91485 *for units with four-digits*) </li>
+                    <li>select Launch System Functions, Click on Reload Caps </li>
+                    <li>Once that is complete, reboot the register screen by pressing the blue power button.</li>
+                    <li>If none of these steps work, please contact UIS Technical services at at 770-729-5933, option 2.</li>
                     </ul>
             </div>
         </div>
-
-
         @Html.Partial("_PowerVar")
+
 <div class="panel-heading">
     <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accMicro" href="#MicCollapse5">Replacing an NCR Terminal</a>
+                <a data-toggle="collapse" data-parent="#accMicro" href="#MicCollapse5">Replacing an NCR Terminal to Oracle TSR Setup Instructions</a>
     </h4>
 </div>
 <div id="MicCollapse5" class="panel-collapse collapse">
@@ -502,7 +504,7 @@
             The following information can be found on the PDF guide that was sent with your TSR and can be found
             <a href="https://info.wafflehouse.com/OpsExpress/Content/Documents/Micros/Micros Oracle Install Guide.pdf" target="_blank">here</a>
         </p>
-        <h3 style="text-align:center">---Before Install Day--- </h3>
+        <!--<h3 style="text-align:center">---Before Install Day--- </h3>
         <div class="row">
             <div class="col-sm-4">
                 <p>Make sure your Cradlepoint router is ready and will work with the new Oracle TSR.  To do this locate the Cradlepoint router under the Cash stand.  </p>
@@ -640,11 +642,11 @@
                 Call or Email UIS Helpdesk if you do not have a Cradle Point Router with two Antennas and a Powervar UPS <b><u>770-729-5933</b></u> or UIS@wafflehouse.com.
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Step 6</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Step 1</a>
             </h4>
         </div>
         <div id="collapse6" class="panel-collapse collapse">
@@ -656,7 +658,7 @@
                             You will need to run the power cord for printer (Green Flag) and Workstation (Orange Flag) along with an ethernet cable.
                             Also run the hub cable (Purple Flag) for the Payment Terminal (PED) through the hole as well.
                         </h5>
-                        <div style="width: 450px; margin: 0 auto;">
+                        <div style="width: 400px; margin: 0 auto;">
                                     <img src="@Url.Content("~/Images/upgrade7.png")" class="img-responsive"  data-toggle="modal" data-target="#upgrade7" style="display: block; width:100%;" data-toggle="modal" class="full" />
                         </div>
                     </div>
@@ -681,7 +683,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Step 7</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Step 2</a>
             </h4>
         </div>
         <iv id="collapse7" class="panel-collapse collapse">
@@ -697,25 +699,24 @@
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <a><img src="@Url.Content("~/Images/upgrade11.png")" class="img-responsive" data-toggle="modal" data-target="#upgrade11" style="max-width:900px; width:100%;" data-toggle="modal" class="full"></a>
+                        <a><img src="@Url.Content("~/Images/upgrade11.png")" class="img-responsive" data-toggle="modal" data-target="#upgrade11" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
                     </div>
                     <div class="col-sm-6">
                         <div style="width: 450px; margin: 0 auto;">
                             <div style="width: 450px; margin: 0 auto;">
-                                <a><img src="@Url.Content("~/Images/upgrade10.jpg")" class="img-responsive" data-toggle="modal" data-target="#upgrade10" style="max-width:900px; width:100%;" data-toggle="modal" class="full"></a>
+                                <a><img src="@Url.Content("~/Images/upgrade10.jpg")" class="img-responsive" data-toggle="modal" data-target="#upgrade10" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
                                 <br />
-                                <a><img src="@Url.Content("~/Images/upgrade12.png")" class="img-responsive" data-toggle="modal" data-target="#upgrade12" style="max-width:900px; width:100%;" data-toggle="modal" class="full"></a>
+                                <a><img src="@Url.Content("~/Images/upgrade12.png")" class="img-responsive" data-toggle="modal" data-target="#upgrade12" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
-
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Step 8</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Step 3</a>
             </h4>
         </div>
         <div id="collapse8" class="panel-collapse collapse">
@@ -726,14 +727,14 @@
                 </p>
             </div>
             <div style="width: 450px; margin: 0 auto;">
-                <img src="@Url.Content("~/Images/upgrade13.jpg")" class="img-responsive" data-toggle="modal" data-target="#upgrade13" width="450" style="display: block;" />
+                <img src="@Url.Content("~/Images/upgrade13.jpg")" class="img-responsive" data-toggle="modal" data-target="#upgrade13" width="400" style="display: block;" />
             </div>
         </div>
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Step 9</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Step 4</a>
             </h4>
         </div>
         <div id="collapse9" class="panel-collapse collapse">
@@ -765,7 +766,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Step 10</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Step 5</a>
             </h4>
         </div>
         <div id="collapse10" class="panel-collapse collapse">
@@ -781,11 +782,19 @@
                     <a><img src="@Url.Content("~/Images/upgrade19.png")" data-toggle="modal" data-target="#upgrade19" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
                 <div class="col-sm-3">
-                    <a><img src="@Url.Content("~/Images/upgrade20.jpg") data-toggle="modal" data-target="#upgrade20" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade20.jpg")" data-target=" #upgrade20" style="max-width:1000px; width:100%;" data-toggle="modal" class="img-responsive" ></a>
                 </div>
                 <div class="col-sm-3">
                     <a><img src="@Url.Content("~/Images/upgrade21.png")" data-toggle="modal" data-target="#upgrade21" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
+                <div class="col-sm-3">
+                    <a><img src="@Url.Content("~/Images/ports.png")" data-toggle="modal" data-target="#tsr1" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a><img src="@Url.Content("~/Images/PSU1.png")" data-toggle="modal" data-target="#tsr2" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                </div>
+
+
             </div>
 
         </div>
@@ -793,7 +802,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Step 11</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Step 6</a>
             </h4>
         </div>
         <div id="collapse11" class="panel-collapse collapse">
@@ -832,7 +841,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Step 12</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Step 7</a>
             </h4>
         </div>
         <div id="collapse12" class="panel-collapse collapse">
@@ -841,26 +850,26 @@
                 <p>Plug the PED hub connector in the bottom of the PED.  The PED should automatically turn on.  </p>
                 <p>Re attach the port cover and screw it back into Place.  Now you can mount the PED to the Payment Terminal Stand.  </p>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade27.png")" data-toggle="modal" data-target="#upgrade27" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade27.png")" data-toggle="modal" data-target="#upgrade27" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade28.png")" data-toggle="modal" data-target="#upgrade28" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade28.png")" data-toggle="modal" data-target="#upgrade28" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade29.png")" data-toggle="modal" data-target="#upgrade29" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade29.png")" data-toggle="modal" data-target="#upgrade29" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade30.jpg")" data-toggle="modal" data-target="#upgrade30" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade30.jpg")" data-toggle="modal" data-target="#upgrade30" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
             </div>
             <div class="panel-body">
                 <p>There are two thumb screws locating on the back of the plate that the PED will attach to.  Screw the PED into the Stand Tightly.</p>
                 <p>On the bottom of the PED Stand is a strong adhesive pad.  Locate a good Spot for the PED then remove the cover on the bottom of the adhesive Pad and secure it to the Cash Stand facing the Customer. </p>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade31.png")" data-toggle="modal" data-target="#upgrade31" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade31.png")" data-toggle="modal" data-target="#upgrade31" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
                 <div class="col-sm-2">
-                    <a><img src="@Url.Content("~/Images/upgrade32.jpg")" data-toggle="modal" data-target="#upgrade32" style="max-width:1000px; width:100%;" data-toggle="modal" class="full"></a>
+                    <a><img src="@Url.Content("~/Images/upgrade32.jpg")" data-toggle="modal" data-target="#upgrade32" style="max-width:450px; width:100%;" data-toggle="modal" class="full"></a>
                 </div>
             </div>
         </div>
@@ -868,7 +877,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Step 13</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Step 8</a>
             </h4>
         </div>
         <div id="collapse13" class="panel-collapse collapse">
@@ -910,7 +919,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Step 14</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Step 9</a>
             </h4>
         </div>
         <div id="collapse14" class="panel-collapse collapse">
@@ -919,7 +928,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <hr />
 <h3 style="text-align:center">---After Install Instructions--- </h3>
@@ -939,16 +947,16 @@
     <li>Tap Update Database</li>
 </ul>
 <p>This will take a few seconds and then complete.  When it is done, log out and then log back in for ticket entry.</p>
-<p>Call the Micros Support number and let them know you have finished your install.  The number is <b><i>1-800-305-8649.</i></b>  Be sure to save this number in your phone so you can call them if you have any issues with your new TSR hardware in the future</p>
-<p>Final Step: Put the NCR hardware in the Boxes and prepare it for return to Technical Services using the Included FedEx Return label.  Please Write you Unit number in the from section of the return label.	</p>
+<!--<p>Call the Micros Support number and let them know you have finished your install.  The number is <b><i>1-800-305-8649.</i></b>  Be sure to save this number in your phone so you can call them if you have any issues with your new TSR hardware in the future</p>
+<p>Final Step: Put the NCR hardware in the Boxes and prepare it for return to Technical Services using the Included FedEx Return label.  Please Write you Unit number in the from section of the return label.	</p>-->
 
     </div>
     </div>
-<div class="panel-heading">
+<!--<div class="panel-heading">
     <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accMicro" href="#MicCollapseTill">Read Till Report</a>
     </h4>
-</div>
+</div>-->
 <div id="MicCollapseTill" class="panel-collapse collapse">
     <div class="panel-body">
         <h3>How to read MICROS Till report</h3>
@@ -1071,11 +1079,11 @@
         </div>
     </div>
 </div>
-<div class="panel-heading">
+<!--<div class="panel-heading">
     <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accMicro" href="#MicCollapseXZ">Read MICROS X, Z, and UIS</a>
     </h4>
-</div>
+</div>-->
 <div id="MicCollapseXZ" class="panel-collapse collapse">
     <div class="panel-body">
         <h3>How to read X and Z reports</h3>
@@ -1215,7 +1223,7 @@
         </div>
         <hr />
         <h3>UIS Sales and Register Readings</h3>
-        <img src="@Url.Content("~/Images/UISMicro.png")" class="full">
+        <img src="@Url.Content("~/Images/UISMicro.png")" class="img-responsive img-thumbnail center-block" style="max-width: 400px; height: auto;">
 
     </div>
 </div>
@@ -1334,7 +1342,7 @@
                 <div CLASS="col-sm-4"><br /><br />
             <li>Click the refund button</li>
     </div>
-    <div CLASS="col-sm-4"><a><img src="@Url.Content("~/Images/OLORefund2.PNG")" data-toggle="modal" data-target="#" class="full"></a></div>
+    <div CLASS="col-sm-4"><a><img src="@Url.Content("~/Images/OLORefund2.PNG")" class="img-responsive img-thumbnail center-block" style="max-width: 400px; height: auto;"></a></div>
 </div>
 <div class="row">
     <div CLASS="col-sm-4">
@@ -1346,7 +1354,7 @@
         <li>Hit the submit button.</li>
 
     </div>
-    <div CLASS="col-sm-4"><a><img src="@Url.Content("~/Images/OLORefund3.PNG")" data-toggle="modal" data-target="#" class="full"></a></div>
+    <div CLASS="col-sm-4"><a><img src="@Url.Content("~/Images/OLORefund3.PNG")" class="img-responsive img-thumbnail center-block" style="max-width: 400px; height: auto;"></a></div>
 </div>
 
 
@@ -1415,22 +1423,33 @@
 
     </div>
 </div>
-<!--<div class="panel-heading">
+<div class="panel-heading">
     <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accMicro" href="#MiccollapseEquip">Ordering Spare Equipment </a>
     </h4>
-</div>-->
+</div>
 <div id="MiccollapseEquip" class="panel-collapse collapse">
     <div class="panel-body">
         <h4>Ordering Spare Equipment - Oracle Only </h4>
-        <ul>
+        <!--<ul>
             <li>Please call Oracle support at 800-305-8649.</li>
             <ul>
                 <li>Select option 2 to order the register screen, printer and cash drawer.</li>
                 <li>Select option 3 to order the credit card reader(PED).</li>
             </ul>
+        </ul>-->
+        <ul><b>ONLY DVN, RGN, & ARA MGRS CAN ORDER SPARE EQUIPMENT</b>
+            <li> Please email Sparerequest@wafflehouse.com </li>
+            <li> Please include home unit number, P#, and items you will need. </li>
+            <li> Please note you are only able to order 1 device per item listed below:<</li>
+            <ul>
+                <li>Oracle TSR Monitor</li>
+                <li>Oracle TSR Printer</li>
+                <li>Oracle TSR Cash Drawer</li>
+                <li>Oracle TSR PED (Credit Card Reader)</li>
+                <li>Cradlepoint Router</li>
+            </ul>
         </ul>
-
     </div>
 </div>
 
