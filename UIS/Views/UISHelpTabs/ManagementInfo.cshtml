@@ -250,19 +250,42 @@
             <div class="panel-body">
                 <h4>Ops Express - Registering Phone Number</h4>
                 <span>If Ops Express is asking you to register your phone number, but you’re not getting a code sent to your phone, please perform the following:</span>
-                <br /><a><img src="@Url.Content("~/Images/OPSPic1.png")" data-toggle="modal" data-target="#OPSPic1" width="30%"></a>
+                <br />
+                <img src="@Url.Content("~/Images/OPSPic1.png")"
+                     data-toggle="modal"
+                     data-target="#modalOPSPic1"
+                     class="img-responsive shadow img-thumbnail block"
+                     style="max-width: 100%; height: auto;" />
+
+
                 <ol>
+                    <br />
                     <li>Text “YES” to 923353. *Send YES without the quotation marks*</li>
                     <li>You should receive a text message:</li>
                     <ul><li>Indicating your phone number is now registered with Ops Express.</li></ul>
                     <a>
-                        <img src="@Url.Content("~/Images/OPSPic2.png")" data-toggle="modal" data-target="#OPSPic1" width="30%"></a>
+                        <img src="@Url.Content("~/Images/OPSPic2.png")"
+                             data-toggle="modal"
+                             data-target="#modalOPSPic2"
+                             class="img-responsive shadow img-thumbnail block"
+                             style="max-width: 100%; height: auto;" />
+
+                    
+                    <br />
                     <li>You will then go back into Ops Express, enter your phone number in on “Step 1) Phone Number:” and press on “Submit.”</li>
                     <li>You will then receive another text message with your verification code. </li>
                 </ol>
                 <span>If you still need not receive a verification code after following the steps above. Please call UIS tech at 770-729-5933. </span>
             </div>
-
+            <div class="modal fade" id="modalOPSPic1" tabindex="-1" role="dialog" aria-labelledby="modalLabelOPSPic1" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="@Url.Content("~/Images/OPSPic1.png")" class="img-fluid" alt="OPSPic1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
