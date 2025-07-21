@@ -43,36 +43,28 @@
 
         .nav-link:hover,
         .dropdown-menu a:hover {
-            background-color: white;
+            background-color: white !important;
             color: black !important;
         }
 
-        .search-form {
-            margin-top: 2px;
-            float: right;
-            margin-right: 100px;
+        .dropdown-menu {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
         }
 
-        input[type=text] {
-            padding: 7px;
+        .dropdown-menu a{
+            color: darkgrey !important;
+            background-color: #333333 !important;
             border: none;
-            font-size: 16px;
-            font-family: sans-serif;
-            color: black
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            margin: 0 !important;
         }
-
-        button {
-            margin-left: -5px;
-            background: #D3D3D3;
-            color: #333333;
-            border-radius: 0 7px 7px 0;
-            cursor: pointer;
-            position: relative;
-            padding: 7px;
-            font-family: sans-serif;
-            border: none;
-            font-size: 16px;
-        }
+        
+       .dropdown-menu a.active {
+           color: white !important;
+       }
 
         .text-wrap {
             max-width: 450px;
