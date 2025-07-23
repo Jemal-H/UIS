@@ -1,4 +1,4 @@
-﻿﻿
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,76 +14,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .navbar {
-            background-color: #333333 !important;
-            position: static;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 2px 2px;
+        
+         .navbar {
+             background-color: #333333 !important;
+             position: static;
+             top: 0;
+             left: 0;
+             width: 100%;
+             padding: 2px 2px;
+             color: white !important;
+         }
+
+         .topnav a {
+             float: left;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 17px;
+         }
+
+         .navbar-nav .nav-link{
+            padding: 10px !important;
+         }
+
+         .navbar-brand img {
+             width: 75px;
+             height: auto;
+         }
+
+         .nav-link:hover,
+         .dropdown-menu a:hover {
+             background-color: white !important;
+             color: black !important;
+         }
+
+         .dropdown-menu {
+             padding: 0 !important;
+             margin: 0 !important;
+             border: none !important;
+         }
+
+         .dropdown-menu a{
+             color: darkgrey !important;
+             background-color: #333333 !important;
+             border: none;
+             padding-top: 8px !important;
+             padding-bottom: 8px !important;
+             margin: 0 !important;
+         }
+
+        .dropdown-menu a.active {
             color: white !important;
         }
 
-        .topnav a {
-            float: left;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+         .text-wrap {
+             max-width: 450px;
+             word-wrap: break-word;
+         }
 
-        .navbar-nav .nav-link{
-           padding: 10px !important;
-        }
+         img {
+             max-width: 100%;
+             height: auto;
+         }
 
-        .navbar-brand img {
-            width: 75px;
-            height: auto;
-        }
+         .dropdown-menu .dropdown-item{
+             color: #fff;
+             background-color: #333333;
 
-        .nav-link:hover,
-        .dropdown-menu a:hover {
-            background-color: white;
-            color: black !important;
-        }
+         }
 
-        .search-form {
-            margin-top: 2px;
-            float: right;
-            margin-right: 100px;
+        .dropdown-menu .dropdown-item:hover {
+            color: #fff;
+            background-color: #333333;
         }
-
-        input[type=text] {
-            padding: 7px;
-            border: none;
-            font-size: 16px;
-            font-family: sans-serif;
-            color: black
-        }
-
-        button {
-            margin-left: -5px;
-            background: #D3D3D3;
-            color: #333333;
-            border-radius: 0 7px 7px 0;
-            cursor: pointer;
-            position: relative;
-            padding: 7px;
-            font-family: sans-serif;
-            border: none;
-            font-size: 16px;
-        }
-
-        .text-wrap {
-            max-width: 450px;
-            word-wrap: break-word;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
 
     </style>
 </head>
@@ -169,7 +172,7 @@
                 <h6>
                     <b>
                         <center>
-                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b> 
+                            If the pages you have checked did not contain the solution to your problem, after you have checked every tab, please call us at <b><u>770-729-5933</u></b>
                             so that we may help you resolve the issue. If your device is not working and is producing smoke or a harsh smoke smell, unplug it immediately and call us.
                         </center>
                     </b>
