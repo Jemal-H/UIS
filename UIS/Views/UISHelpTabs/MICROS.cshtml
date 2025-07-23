@@ -335,7 +335,7 @@
                 <div class="row">
                     <div class="col-sm-4 text-center">
                         <h5><u>IBR600C-150M-D</u></h5>
-                        <div style="width: 300px; margin: 0 auto;">
+                        <div style="max-width: 100%; height: auto;">
                             <img src="@Url.Content("~/Images/RegRouterTh.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalRegRouterTh"
@@ -394,7 +394,7 @@
                     </div>
                     <div class="col-sm-4 text-center">
                         <h5><u>IBR600B-LP4</u></h5>
-                        <div style="width: 300px; margin: 0 auto;">
+                        <div style="max-width: 100%; height: auto;">
                             <img src="@Url.Content("~/Images/RegRouterSt.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalRegRouterSt"
@@ -447,7 +447,7 @@
                     </div>-->
                     <div class="col-sm-4 text-center">
                         <h5><u>S700</u></h5>
-                        <div style="width: 300px; margin: 0 auto;">
+                        <div style="max-width: 100%; height: auto;">
                             <img src="@Url.Content("~/Images/RegRouterN.jpg")"
                                  data-toggle="modal"
                                  data-target="#modalRegRouterN"
@@ -521,22 +521,39 @@
                         </ul>
                     </div>
                     <div class="col-sm-2">
-                        <center><u>Router is connected to the Internet</u></center>
-                        <img src="@Url.Content("~/Images/RegRouterNS2.jpg")"
+                        <center><u>Router is connected to the Internet.</u></center>
+                        <img src="@Url.Content("~/Images/RegRouterS2.jpg")"
                              data-toggle="modal"
-                             data-target="#modalRegRouterNS2"
+                             data-target="#modalRegRouterS2"
                              class="img-responsive shadow img-thumbnail center-block"
                              style="max-width: 100%; height: auto;" />
-                        <div class="modal fade" id="modalRegRouterNS2" tabindex="-1" role="dialog" aria-labelledby="modalLabelRegRouterNS2" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body text-center">
-                                        <img src="@Url.Content("~/Images/RegRouterNS2.jpg")" class="img-fluid" alt="RegRouterNS2" />
-                                    </div>
+                        <br />
+                        <img src="@Url.Content("~/Images/5g_router_connected.png")"
+                             data-toggle="modal"
+                             data-target="#modal5g_router_connected"
+                             class="img-responsive shadow img-thumbnail center-block"
+                             style="max-width: 100%; height: auto;" />
+                    </div>
+                    <div class="modal fade" id="modalRegRouterS2" tabindex="-1" role="dialog" aria-labelledby="modalLabelRegRouterS2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/RegRouterS2.jpg")" class="img-fluid" alt="RegRouterS2" />
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br><br />
+                    <div class="modal fade" id="modal5g_router_connected" tabindex="-1" role="dialog" aria-labelledby="modalLabel5g_router_connected" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/5g_router_connected.png")" class="img-fluid" alt="5g_router_connected" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-sm-3">
                         <center><u>Router is not connected.</u></center>
                         <img src="@Url.Content("~/Images/RegRouterNS1.jpg")"
@@ -548,6 +565,13 @@
                         <img src="@Url.Content("~/Images/RegRouterNS2.jpg")"
                              data-toggle="modal"
                              data-target="#modalRegRouterNS2"
+                             class="img-responsive shadow img-thumbnail center-block"
+                             style="max-width: 100%; height: auto;" />
+
+                        <br />
+                        <img src="@Url.Content("~/Images/5g_router_not_connected.png")"
+                             data-toggle="modal"
+                             data-target="#modal5g_router_not_connected"
                              class="img-responsive shadow img-thumbnail center-block"
                              style="max-width: 100%; height: auto;" />
                     </div>
@@ -570,13 +594,23 @@
                             </div>
                         </div>
                     </div>
+                    <br><br />
+                    <div class="modal fade" id="modal5g_router_not_connected" tabindex="-1" role="dialog" aria-labelledby="modalLabel5g_router_not_connected" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/5g_router_not_connected.png")" class="img-fluid" alt="5g_router_not_connected" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr />
                 <h4>Restarting the router:</h4>
                 <p>There are two ways to restart a small cradle point router:</p>
                 <b>**When performing either one of these troubleshooting methods. The router should connect back to the internet after 5-10 minutes**</b>
                 <ol>
-                    <li>Unplug the power cable and plug the cable back in.</li>
+                    <li>Unplug the power cable and plug the cable back in.</li> 
                     <li>Factory Reset the Router:</li>
                     <ol>
                         <li>Get a paperclip or anything small enough to press the reset button on the back of the router. (labeled "C" in the pictures above)</li>
