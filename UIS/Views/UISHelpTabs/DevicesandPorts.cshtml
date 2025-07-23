@@ -1338,76 +1338,77 @@
                 <a data-toggle="collapse" data-parent="#accDevices" href="#Devcollapse6">Phone</a>
             </h4>
         </div>
-        <div class="panel-body">
+        <div id="Devcollapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="@Url.Content("~/Images/Phone.png")"
+                             data-toggle="modal"
+                             data-target="#modalPhone"
+                             class="img-responsive shadow img-thumbnail center-block"
+                             style="max-width: 100%; height: auto;" />
+                    </div>
+                    <div class="col-sm-3">
+                        The phone on the right should be in the office.
+                        The phone on the left should be in the front near the TSR screen.
 
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="@Url.Content("~/Images/Phone.png")"
-                         data-toggle="modal"
-                         data-target="#modalPhone"
-                         class="img-responsive shadow img-thumbnail center-block"
-                         style="max-width: 100%; height: auto;" />
-                </div>
-                <div class="col-sm-3">
-                    The phone on the right should be in the office.<br />
-                    The phone on the left should be in the front near the TSR screen.
-                </div>
-            </div>
-
-            <div class="modal fade" id="modalPhone" tabindex="-1" role="dialog" aria-labelledby="modalLabelPhone" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body text-center">
-                            <img src="@Url.Content("~/Images/Phone.png")" class="img-fluid" alt="Phone" />
+                    </div>
+                    <div class="modal fade" id="modalPhone" tabindex="-1" role="dialog" aria-labelledby="modalLabelPhone" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <img src="@Url.Content("~/Images/Phone.png")" class="img-fluid" alt="Phone" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <br />
+                <br />
 
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="@Url.Content("~/Images/ATA.png")"
-                         data-toggle="modal"
-                         data-target="#modalATA"
-                         class="img-responsive shadow img-thumbnail center-block"
-                         style="max-width: 100%; height: auto;" />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="@Url.Content("~/Images/ATA.png")"
+                             data-toggle="modal"
+                             data-target="#modalATA"
+                             class="img-responsive shadow img-thumbnail center-block"
+                             style="max-width: 100%; height: auto;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <p>
+                            Polycom ATA – Phone Modem:
+                            Should be in the office mounted to the wall
+                        </p>
+
+
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <p>
-                        Polycom ATA – Phone Modem:<br />
-                        Should be in the office mounted to the wall
-                    </p>
-                </div>
-            </div>
-
-            <div class="modal fade" id="modalATA" tabindex="-1" role="dialog" aria-labelledby="modalLabelATA" aria-hidden="true">
-                <div class="modal-dialog modal-md" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body text-center">
-                            <img src="@Url.Content("~/Images/ATA.png")" class="img-fluid" alt="ATA" />
+                <div class="modal fade" id="modalATA" tabindex="-1" role="dialog" aria-labelledby="modalLabelATA" aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <img src="@Url.Content("~/Images/ATA.png")" class="img-fluid" alt="ATA" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <br />
 
-            <br />
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="@Url.Content("~/Images/Cisco_phone.png")"
-                         data-toggle="modal"
-                         data-target="#modalCisco_phone"
-                         class="img-responsive shadow img-thumbnail center-block"
-                         style="max-width: 100%; height: auto;" />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="@Url.Content("~/Images/Cisco_phone.png")"
+                             data-toggle="modal"
+                             data-target="#modalCisco_phone"
+                             class="img-responsive shadow img-thumbnail center-block"
+                             style="max-width: 100%; height: auto;" />
+                    </div>
                 </div>
-            </div>
-            <div class="modal fade" id="modalCisco_phone" tabindex="-1" role="dialog" aria-labelledby="modalLabelCisco_phone" aria-hidden="true">
-                <div class="modal-dialog modal-md" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body text-center">
-                            <img src="@Url.Content("~/Images/Cisco_phone.png")" class="img-fluid" alt="Cisco Phone" />
+                <div class="modal fade" id="modalCisco_phone" tabindex="-1" role="dialog" aria-labelledby="modalLabelCisco_phone" aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <img src="@Url.Content("~/Images/Cisco_phone.png")" class="img-fluid" alt="Cisco Phone" />
+                            </div>
                         </div>
                     </div>
                 </div>
