@@ -1,7 +1,10 @@
-﻿@{
-    ViewData["Title"] = "DevicesandPorts";
+﻿
+@{
+    ViewData["Title"] = "Devices and Ports";
 }
-<h1>@ViewData["Title"]</h1>
+
+
+<h1>Devices and Ports</h1>
 
 <div class="panel-group" id="accDevices">
     <div class="panel panel-default">
@@ -503,8 +506,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <ol>
-                                    <li class="labelColor-1">Power cable port</li>
-                                    <li class="labelColor-2">Reset button</li>
+                                    <li class="labelColor-1">power cable port</li>
+                                    <li class="labelColor-2">reset button</li>
                                     <li class="labelColor-3">Lan port</li>
                                     <li class="labelColor-4">Wan port: nothing should be plugged into this port</li>
                                     <li class="labelColor-5">Main signal antena</li>
@@ -566,10 +569,10 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <ol>
-                                    <li class="labelColor-1">Reset button</li>
-                                    <li class="labelColor-2">Power cable port</li>
-                                    <li class="labelColor-3">Lan portrait</li>
-                                    <li class="labelColor-4">Wan port: nothing should be plugged into this port.</li>
+                                    <li class="labelColor-1">reset button</li>
+                                    <li class="labelColor-2">power cable port</li>
+                                    <li class="labelColor-3">lan portrait</li>
+                                    <li class="labelColor-4">wan Port: nothing should be plugged into this port.</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
@@ -616,9 +619,9 @@
                             <div class="col-sm-6">
                                 <ol>
                                     <li class="labelColor-1">Power cable port</li>
-                                    <li class="labelColor-2">Power switch</li>
+                                    <li class="labelColor-2">power switch</li>
                                     <li class="labelColor-3">Lan ports (all of these do the same thing.)</li>
-                                    <li class="labelColor-4">Reset button</li>
+                                    <li class="labelColor-4">reset button</li>
                                     <li class="labelColor-5">Wan port (do not use this port.)</li>
                                     <li class="labelColor-6">Aux antena</li>
                                     <li class="labelColor-7">Main antena</li>
@@ -683,9 +686,9 @@
                                     <li class="labelColor-2">Power Switch</li>
                                     <li class="labelColor-3">Reset button</li>
                                     <li class="labelColor-4">Lan ports 1-4</li>
-                                    <li class="labelColor-5">Wan port (do not use this blue port)</li>
-                                    <li class="labelColor-6">Main antena</li>
-                                    <li class="labelColor-7">Div antena</li>
+                                    <li class="labelColor-5">wan port (do not use this blue port)</li>
+                                    <li class="labelColor-6">main antena</li>
+                                    <li class="labelColor-7">div antena</li>
                                     <li class="labelColor-8">GNSS antena (do not use this port)</li>
                                 </ol>
                             </div>
@@ -1325,6 +1328,9 @@
                         <hr />
                     </div>
 
+
+
+
                 </div>
             </div>
         </div>
@@ -1362,7 +1368,7 @@
                 <br />
 
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-lg-3">
                         <img src="@Url.Content("~/Images/ATA.png")"
                              data-toggle="modal"
                              data-target="#modalATA"
@@ -1378,32 +1384,12 @@
 
                     </div>
                 </div>
-                <div class="modal fade" id="modalATA" tabindex="-1" role="dialog" aria-labelledby="modalLabelATA" aria-hidden="true">
-                    <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body text-center">
-                                <img src="@Url.Content("~/Images/ATA.png")" class="img-fluid" alt="ATA" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br />
-
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="@Url.Content("~/Images/Cisco_phone.png")"
-                             data-toggle="modal"
-                             data-target="#modalCisco_phone"
-                             class="img-responsive shadow img-thumbnail center-block"
-                             style="max-width: 100%; height: auto;" />
-                    </div>
-                </div>
-                <div class="modal fade" id="modalCisco_phone" tabindex="-1" role="dialog" aria-labelledby="modalLabelCisco_phone" aria-hidden="true">
-                    <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body text-center">
-                                <img src="@Url.Content("~/Images/Cisco_phone.png")" class="img-fluid" alt="Cisco Phone" />
-                            </div>
+            </div>
+            <div class="modal fade" id="modalATA" tabindex="-1" role="dialog" aria-labelledby="modalLabelATA" aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="@Url.Content("~/Images/ATA.png")" class="img-fluid" alt="ATA" />
                         </div>
                     </div>
                 </div>
