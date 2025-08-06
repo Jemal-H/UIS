@@ -103,8 +103,8 @@
 
                     <p>Status Check: The router is working correctly when you see:</p>
                     <ul>
-                        <li>7 Green Lights</li>
-                        <li>2 – Blue Lights</li>
+                        <li>Seven Green Lights</li>
+                        <li>Two Blue Lights</li>
                     </ul>
 
                     <p>
@@ -194,7 +194,7 @@
 
                         <div class="col-sm-5">
                             <button data-toggle="collapse" class="btn btn-primary" data-target="#UIS5">2. E300 ONLINE</button>
-                            <div id="UIS5" class="collapse">
+                            <div id="UIS5" class="collapse mt-2">
                                 <img src="@Url.Content("~/Images/E300.jpg")"
                                      data-toggle="modal"
                                      data-target="#modalE300UIS4"
@@ -212,6 +212,38 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-3">
+                            <b>E3000:</b>
+                            <ul>
+                                <li>Six-Eight Green Lights</li>
+                                <li>Two Blue Lights</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-5">
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#FrontE3000">3. E3000</button>
+                            <div id="FrontE3000" class="collapse mt-2">
+                                    <img src="@Url.Content("~/Images/FrontE3000.png")"
+                                        data-toggle="modal"
+                                        data-target="#modalFrontE3000"
+                                        class="img-responsive shadow img-thumbnail center-block"
+                                        style="max-width: 100%; height: auto;" />
+                            </div>
+                            <div class="modal fade" id="modalFrontE3000" tabindex="-1" role="dialog" aria-labelledby="modalLabelFrontE3000" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body text-center">
+                                        <img src="@Url.Content("~/Images/FrontE3000.png")" class="img-fluid" alt="FrontE3000" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
                     <p>If your router isn't showing the online status as above, please refer to the Back Office Router tab (in UIS) for Back Office Router troubleshooting.</p>
                     <hr />
                     <h4>Router is online - No dial tone or incoming calls</h4>
@@ -254,21 +286,19 @@
                             </ul>
                         </div>
                         <div class="col-sm-6">
-                            <button data-toggle="collapse" class="btn btn-primary" data-target="#phone1"><u>The set-up phone router diagram.  </u></button>
-                            <div id="phone1" class="collapse">
-                                <div class="col-lg-10">
-                                    <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")"
+                            <button data-toggle="collapse" class="btn btn-primary" data-target="#phone1">The set-up phone router diagram.</button>
+                            <div id="phone1" class="collapse mt-2">
+                                <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")"
                                          data-toggle="modal"
                                          data-target="#modalRouterDiagram4"
                                          class="img-responsive shadow img-thumbnail center-block"
                                          style="max-width: 100%; height: auto;" />
-                                </div>
-                                <div class="modal fade" id="modalRouterDiagram4" tabindex="-1" role="dialog" aria-labelledby="modalLabelRouterDiagram4" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body text-center">
-                                                <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")" class="img-fluid" alt="PhoneRouterDiagram" />
-                                            </div>
+                            </div>
+                            <div class="modal fade" id="modalRouterDiagram4" tabindex="-1" role="dialog" aria-labelledby="modalLabelRouterDiagram4" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body text-center">
+                                            <img src="@Url.Content("~/Images/PhoneRouterDiagram.PNG")" class="img-fluid" alt="PhoneRouterDiagram" />
                                         </div>
                                     </div>
                                 </div>
