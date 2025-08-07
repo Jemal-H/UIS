@@ -781,7 +781,7 @@
                          data-target="#tsrreboot2">
                 </div>
                 <div class="modal fade" id="tsrreboot2" tabindex="-1" role="dialog" aria-labelledby="tsrrebootLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-md" role="document">
                         <div class="modal-content">
                             <div class="modal-body text-center">
                                 <img src="@Url.Content("~/Images/reboottsr2.png")" class="img-fluid" alt="tsrreboot2Image">
@@ -825,7 +825,7 @@
                          data-target="#tsrreboot4">
                 </div>
                 <div class="modal fade" id="tsrreboot4" tabindex="-1" role="dialog" aria-labelledby="tsrrebootLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-md" role="document">
                         <div class="modal-content">
                             <div class="modal-body text-center">
                                 <img src="@Url.Content("~/Images/reboottsr4.png")" class="img-fluid" alt="tsrreboot4Image">
@@ -848,7 +848,7 @@
                          data-target="#tsrreboot5">
                 </div>
                 <div class="modal fade" id="tsrreboot5" tabindex="-1" role="dialog" aria-labelledby="tsrrebootLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-=lg" role="document">
                         <div class="modal-content">
                             <div class="modal-body text-center">
                                 <img src="@Url.Content("~/Images/reboottsr5.png")" class="img-fluid" alt="tsrreboot5Image">
@@ -868,7 +868,7 @@
                          data-target="#tsrreboot6">
                 </div>
                 <div class="modal fade" id="tsrreboot6" tabindex="-1" role="dialog" aria-labelledby="tsrrebootLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-md" role="document">
                         <div class="modal-content">
                             <div class="modal-body text-center">
                                 <img src="@Url.Content("~/Images/reboottsr6.png")" class="img-fluid" alt="tsrreboot6Image">
@@ -1161,21 +1161,58 @@
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a><img src="@Url.Content("~/Images/upgrade11.png")" class="img-responsive img-thumbnail shadow center-block" data-toggle="modal" data-target="#upgrade11" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
+                                    <img src="@Url.Content("~/Images/upgrade11.png")"
+                                         data-toggle="modal"
+                                         data-target="#modalUpgrade11"
+                                         class="img-responsive shadow img-thumbnail center-block"
+                                         style="max-width: 100%; height: auto;" />
+                                </div>
+                                <div class="modal fade" id="modalUpgrade11" tabindex="-1" role="dialog" aria-labelledby="modalLabelUpgrade11" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body text-center">
+                                                <img src="@Url.Content("~/Images/upgrade11.png")" class="img-fluid" alt="Upgrade 11" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div style="width: 450px; margin: 0 auto;">
-                                        <div style="width: 450px; margin: 0 auto;">
-                                            <a><img src="@Url.Content("~/Images/upgrade10.jpg")" class="img-responsive img-thumbnail shadow center-block" data-toggle="modal" data-target="#upgrade10" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
-                                            <br />
-                                            <a><img src="@Url.Content("~/Images/upgrade12.png")" class="img-responsive img-thumbnail shadow center-block" data-toggle="modal" data-target="#upgrade12" style="max-width:400px; width:100%;" data-toggle="modal" class="full"></a>
+                                        <img src="@Url.Content("~/Images/upgrade10.jpg")"
+                                             data-toggle="modal"
+                                             data-target="#modalUpgrade10"
+                                             class="img-responsive shadow img-thumbnail center-block"
+                                             style="max-width: 100%; height: auto;" />
+                                        <br />
+                                        <img src="@Url.Content("~/Images/upgrade12.png")"
+                                             data-toggle="modal"
+                                             data-target="#modalUpgrade12"
+                                             class="img-responsive shadow img-thumbnail center-block"
+                                             style="max-width: 100%; height: auto;" />
+                                    </div>
+                                    <div class="modal fade" id="modalUpgrade10" tabindex="-1" role="dialog" aria-labelledby="modalLabelUpgrade10" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body text-center">
+                                                    <img src="@Url.Content("~/Images/upgrade10.jpg")" class="img-fluid" alt="Upgrade 10" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modalUpgrade12" tabindex="-1" role="dialog" aria-labelledby="modalLabelUpgrade12" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body text-center">
+                                                    <img src="@Url.Content("~/Images/upgrade12.png")" class="img-fluid" alt="Upgrade 12" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="panel panel-default">
+                    </div>
+                     <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Step 3</a>
@@ -2520,14 +2557,14 @@
             <div class="w-100 text-center">
                 <img src="@Url.Content("~/Images/OracleRegister.PNG")"
                      class="img-responsive img-thumbnail shadow center-block"
-                     style="max-width: 500px; width: 100%; height: auto;"
+                     style="max-width: 100%; height: auto;"
                      alt="KeyholeLabel"
                      data-toggle="modal"
                      data-target="#Keyhole1">
             </div>
         </div>
         <div class="modal fade" id="Keyhole1" tabindex="-1" role="dialog" aria-labelledby="placeholder" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-body text-center">
                         <img src="@Url.Content("~/Images/OracleRegister.PNG")" class="img-fluid" alt="Keyhole">
@@ -2540,7 +2577,7 @@
             <li>Enter the key number in the search bar.</li>
             <li>Select the key type and add it to your cart.</li>
             <li>Proceed to checkout.</li>
-</ul>
+        </ul>
         <ul>
             The keys used for the cash drawers are identified by the number on each keyhole.
 
@@ -2575,7 +2612,7 @@
     </h4>
 </div>
 <div id="CastlePED" class="panel-collapse collapse">
-    
+
     <div class="panel-body">
         <h4>
             Castle/PED (Credit Card Reader)
@@ -2583,10 +2620,12 @@
         </h4>
         <p><strong>Won’t customers enter a tip: </strong></p>
         <ol>
-            <li>Reboot the credit card reader by unplugging the power cable from the Verifone adapter. To find the adapter, follow the cable attached to the credit card reader; 
-                on the opposite side of that cable, you’ll see a black power cable next to a network. Unplug the black cable, wait a few seconds, and then plug the cable back in. </li>
+            <li>
+                Reboot the credit card reader by unplugging the power cable from the Verifone adapter. To find the adapter, follow the cable attached to the credit card reader;
+                on the opposite side of that cable, you’ll see a black power cable next to a network. Unplug the black cable, wait a few seconds, and then plug the cable back in.
+            </li>
             <li>Once the credit card reader is back up, run a test transaction to ensure the customers can leave a tip. </li>
-            
+
         </ol>
         <p><strong>Unable to connect to payment provider error: </strong></p>
         <ol>
@@ -2628,12 +2667,7 @@
             <li>If the power cable for the Castle device is faulty, another USB-C cable can be bought locally at Walmart, Best-Buy, etc.  </li>
 
         </ol>
-       
+
     </div>
 </div>
 
-    </div>
-    </div>
-
-
-</div>
